@@ -2,8 +2,9 @@ import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function bookCatagories() {
+function Bookcatagories() {
   return (
     <Tab.Container id="left-tabs-example" defaultActiveKey="first">
       <Row>
@@ -40,4 +41,4 @@ function bookCatagories() {
   );
 }
 
-export default bookCatagories;
+export default Bookcatagories;

@@ -1,0 +1,14 @@
+.container {
+    width: auto;
+}
+.navdiv {
+    display: flex;
+    font-size: xx-large;
+}
+
+.pagebutton {
+    margin: 20px;
+    padding: 20px;
+    color: #41B3A3;
+    font-weight: 900;
+}

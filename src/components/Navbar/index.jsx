@@ -1,53 +1,25 @@
-import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import './style.css';
+import Nav from 'react-bootstrap/Nav';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './style.css'
 
 function Navbar() {
-    return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <Link className="navbar-brand" to="/">
-                    Bookshelf IMG
-                </Link>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav">
-                        <li className="nav-item">
-                            <NavLink
-                                to="/"
-                                end
-                                className={({ isActive }) =>
-                                    isActive ? 'nav-link active' : 'nav-link'
-                                }
-                            >
-                                Bookshelf
-                            </NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink
-                                to="/bookshelf"
-                                className={({ isActive }) =>
-                                    isActive ? 'nav-link active' : 'nav-link'
-                                }
-                            >
-                                Reading Goals
-                            </NavLink>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    );
+  return (
+    <div className='container'>
+    <Nav variant="pills" defaultActiveKey="/home">
+      <Nav.Item>
+        <Nav.Link href="/home"><img src="./Assets/Images/Bookshelf"></img></Nav.Link>
+      </Nav.Item>
+      <div className='navdiv'>
+      <Nav.Item>
+        <Nav.Link className='pagebutton' eventKey="link-1">Bookshelf</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link className='pagebutton' eventKey="link-1">Reading Goals</Nav.Link>
+      </Nav.Item>
+      </div>
+    </Nav>
+    </div>
+  );
 }
 
 export default Navbar;
