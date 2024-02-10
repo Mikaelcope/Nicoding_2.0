@@ -6,6 +6,10 @@
     font-size: xx-large;
 }
 
+.nav-pills {
+    justify-content: space-between;
+}
+
 .pagebutton {
     margin: 20px;
     padding: 20px;

@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/Navbar/index'
-import Bookcatagories from './components/Cateogories'
+import Bookcatagories from './components/Cateogories/catagories'
 
 
 function App() {
