@@ -1,13 +1,13 @@
 import Nav from 'react-bootstrap/Nav';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './style.css'
+import './style.css';
 
 function Navbar() {
   return (
     <div className='container'>
     <Nav variant="pills" defaultActiveKey="/home">
       <Nav.Item>
-        <Nav.Link href="/home"><img src="./Assets/Images/Bookshelf"></img></Nav.Link>
+        <Nav.Link href="/home">Bookshelf Image</Nav.Link>
       </Nav.Item>
       <div className='navdiv'>
       <Nav.Item>

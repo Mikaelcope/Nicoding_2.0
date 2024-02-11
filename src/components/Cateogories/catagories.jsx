@@ -7,6 +7,10 @@ import './catagories.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { faRobot } from '@fortawesome/free-solid-svg-icons';
+import { faLocationCrosshairs } from '@fortawesome/free-solid-svg-icons';
+import { faUserAstronaut } from '@fortawesome/free-solid-svg-icons';
+import { faDragon } from '@fortawesome/free-solid-svg-icons';
+import { faChildren } from '@fortawesome/free-solid-svg-icons';
 
 function Bookcatagories() {
   return (
@@ -18,19 +22,19 @@ function Bookcatagories() {
               <Nav.Link className='catitem' eventKey="first"><FontAwesomeIcon icon={faHeart} style={{color: "#41b3a3",}} />Romance</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link className='catitem' eventKey="second"><FontAwesomeIcon icon={faRobot} style={{"--fa-primary-color": "#41b3a3", "--fa-secondary-color": "#41b3a3",}} />Fiction</Nav.Link>
+              <Nav.Link className='catitem' eventKey="second"><FontAwesomeIcon icon={faRobot} style={{color: "#41b3a3",}} />Fiction</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link className='catitem' eventKey="second"><FontAwesomeIcon icon="fa-solid fa-radiation" style={{color: "#41b3a3",}} />Action</Nav.Link>
+              <Nav.Link className='catitem' eventKey="second"><FontAwesomeIcon icon={faLocationCrosshairs} style={{color: "#41b3a3",}} /> Action</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link className='catitem' eventKey="second"><FontAwesomeIcon icon="fa-solid fa-user-astronaut" style={{color: "#41b2b4",}} />Sci-Fi</Nav.Link>
+              <Nav.Link className='catitem' eventKey="second"><FontAwesomeIcon icon={faUserAstronaut} style={{color: "#41b3a3",}} />Sci-Fi</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link className='catitem' eventKey="second"><FontAwesomeIcon icon="fa-duotone fa-dragon" style={{"--fa-primary-color": "#41b3a3", "--fa-secondary-color": "#41b3a3",}} />Fantasy</Nav.Link>
+              <Nav.Link className='catitem' eventKey="second"><FontAwesomeIcon icon={faDragon} style={{color: "#41b3a3",}} /> Fantasy</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link className='catitem' eventKey="second"><FontAwesomeIcon icon="fa-solid fa-children" style={{color: "#41b3a3",}} />Children</Nav.Link>
+              <Nav.Link className='catitem' eventKey="second"><FontAwesomeIcon icon={faChildren} style={{color: "#41b3a3",}} /> Children</Nav.Link>
             </Nav.Item>
           </Nav>
         </Col>
