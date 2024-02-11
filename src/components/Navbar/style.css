@@ -1,0 +1,28 @@
+.container {
+    width: auto;
+    border-bottom: solid 2px lightgrey;
+    margin: 0px;
+}
+.navdiv {
+    display: flex;
+    font-size: xx-large;
+}
+
+.nav-pills {
+    justify-content: space-between;
+    margin: 0;
+    padding: 0px !important;
+    align-items: end;
+}
+
+.pagebutton {
+    margin: 10px;
+    padding: 10px;
+    color: #85CDCA;
+    font-weight: 600;
+    
+}
+
+.navLogo {
+        background-color: white !important;
+}

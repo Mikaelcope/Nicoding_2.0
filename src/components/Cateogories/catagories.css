@@ -1,0 +1,16 @@
+.nav {
+    font-size: xx-large;
+    padding: 20px;
+    font-weight: 400;
+}
+
+.catitem {
+    display: flex;
+    color:#E27D60;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.icondiv {
+    width: 70px;
+}
