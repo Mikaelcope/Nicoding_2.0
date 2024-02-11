@@ -3,16 +3,24 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+// testing
+
+import SearchBar from './components/Searchform/SearchBar'; 
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+     {/* Just Testing the Search Bar */}
       <div>
-        <a href="https://vitejs.dev" target="_blank">
+      <SearchBar />
+      </div>
+      <div>
+        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
-        <a href="https://react.dev" target="_blank">
+        <a href="https://react.dev" target="_blank" rel="noreferrer">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
