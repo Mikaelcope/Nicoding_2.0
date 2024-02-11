@@ -19,22 +19,22 @@ function Bookcatagories() {
         <Col sm={3}>
           <Nav variant="catagories" className="flex-column">
             <Nav.Item>
-              <Nav.Link className='catitem' eventKey="first"><FontAwesomeIcon icon={faHeart} style={{color: "#41b3a3",}} />Romance</Nav.Link>
+              <Nav.Link className='catitem' eventKey="first"><FontAwesomeIcon icon={faHeart} style={{color: "#41b3a3",}} className='icondiv' />Romance</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link className='catitem' eventKey="second"><FontAwesomeIcon icon={faRobot} style={{color: "#41b3a3",}} />Fiction</Nav.Link>
+              <Nav.Link className='catitem' eventKey="second"><FontAwesomeIcon icon={faRobot} style={{color: "#41b3a3",}} className='icondiv'/>Fiction</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link className='catitem' eventKey="second"><FontAwesomeIcon icon={faLocationCrosshairs} style={{color: "#41b3a3",}} /> Action</Nav.Link>
+              <Nav.Link className='catitem' eventKey="second"><FontAwesomeIcon icon={faLocationCrosshairs} style={{color: "#41b3a3",}} className='icondiv'/> Action</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link className='catitem' eventKey="second"><FontAwesomeIcon icon={faUserAstronaut} style={{color: "#41b3a3",}} />Sci-Fi</Nav.Link>
+              <Nav.Link className='catitem' eventKey="second"><FontAwesomeIcon icon={faUserAstronaut} style={{color: "#41b3a3",}} className='icondiv'/>Sci-Fi</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link className='catitem' eventKey="second"><FontAwesomeIcon icon={faDragon} style={{color: "#41b3a3",}} /> Fantasy</Nav.Link>
+              <Nav.Link className='catitem' eventKey="second"><FontAwesomeIcon icon={faDragon} style={{color: "#41b3a3",}} className='icondiv'/> Fantasy</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link className='catitem' eventKey="second"><FontAwesomeIcon icon={faChildren} style={{color: "#41b3a3",}} /> Children</Nav.Link>
+              <Nav.Link className='catitem' eventKey="second"><FontAwesomeIcon icon={faChildren} style={{color: "#41b3a3",}} className='icondiv'/> Children</Nav.Link>
             </Nav.Item>
           </Nav>
         </Col>
