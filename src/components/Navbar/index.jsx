@@ -15,7 +15,7 @@ function Navbar() {
         <Nav.Link className='pagebutton' eventKey="link-1">Bookshelf</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link className='pagebutton' eventKey="link-1">Reading Goals</Nav.Link>
+        <Nav.Link className='pagebutton' eventKey="link-2">Reading Goals</Nav.Link>
       </Nav.Item>
       </div>
     </Nav>

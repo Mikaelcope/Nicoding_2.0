@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { faRobot } from '@fortawesome/free-solid-svg-icons';
 import { faLocationCrosshairs } from '@fortawesome/free-solid-svg-icons';
-import { faUserAstronaut } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUpWideShort } from '@fortawesome/free-solid-svg-icons';
 import { faDragon } from '@fortawesome/free-solid-svg-icons';
 import { faChildren } from '@fortawesome/free-solid-svg-icons';
 
@@ -37,7 +37,7 @@ function Bookcatagories({ onGenreChange }) {
               <Nav.Link className='catitem' eventKey="action"><FontAwesomeIcon icon={faLocationCrosshairs} style={{ color: "#41b3a3", }} className='icondiv' /> Action</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link className='catitem' eventKey="inspirational"><FontAwesomeIcon icon={faUserAstronaut} style={{ color: "#41b3a3", }} className='icondiv' />Motivational</Nav.Link>
+              <Nav.Link className='catitem' eventKey="inspirational"><FontAwesomeIcon icon={faArrowUpWideShort} style={{color: "#41b3a3",}} className='icondiv'/>Motivational</Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link className='catitem' eventKey="fantasy"><FontAwesomeIcon icon={faDragon} style={{ color: "#41b3a3", }} className='icondiv' /> Fantasy</Nav.Link>

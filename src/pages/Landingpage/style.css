@@ -9,6 +9,7 @@
   
   .disp-columns{
     flex-direction: column;
+    width: -webkit-fill-available;
   }
   .book-swiper {
     flex: 3;
