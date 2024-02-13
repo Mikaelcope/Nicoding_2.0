@@ -1,38 +1,26 @@
 
-import './App.css'
-import Navbar from './components/Navbar/index'
-import Bookcatagories from './components/Cateogories/catagories'
-import SearchBar from './components/Searchform/SearchBar';
-import { useState } from 'react';
-import CardResults from './components/CardResults/CardResults';
-import axios from 'axios';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Landingpage from './pages/Landingpage';
+import Navbar from './components/Navbar';
+import BookshelfPage from './pages/BookshelfPage';
+import Readingchallenge from './pages/Readingchallenge';
+
 
 function App() {
-  const [bookData, setBookData] = useState([]);
-
-  const searchBooks = (searchTerm) => {
-    const apiKey = 'AIzaSyDU7wOeXOzxK1owdR26UBuLPhJ2DnezAco';
-    const query = `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(searchTerm)}&key=${apiKey}&maxResults=12`;
-
-    axios.get(query)
-      .then(res => setBookData(res.data.items))
-      .catch(err => console.error("Error fetching data:", err));
-  };
-
   return (
-    <>
+    <Router>
       <div>
-      <SearchBar onSearch={searchBooks} />
+      <Navbar />
+          <Routes> 
+            <Route path="/" element={<Landingpage/>} />
+            <Route path="/Landingpage" element={<Landingpage/>} />
+            <Route exact path="/BookshelfPage" element={<BookshelfPage/>} />
+            <Route exact path="/Readingchallenge" element={<Readingchallenge/>} />
+          </Routes>
+        
       </div>
-      <div>
-        <CardResults books={bookData} />
-      </div>
-      <div>
-        <Bookcatagories />
-      </div>
-    </>
+    </Router>
   );
 }
 
-export default App
+export default App;

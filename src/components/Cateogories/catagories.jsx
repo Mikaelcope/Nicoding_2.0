@@ -8,33 +8,42 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { faRobot } from '@fortawesome/free-solid-svg-icons';
 import { faLocationCrosshairs } from '@fortawesome/free-solid-svg-icons';
-import { faUserAstronaut } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUpWideShort } from '@fortawesome/free-solid-svg-icons';
 import { faDragon } from '@fortawesome/free-solid-svg-icons';
 import { faChildren } from '@fortawesome/free-solid-svg-icons';
 
-function Bookcatagories() {
+function Bookcatagories({ onGenreChange }) {
+  const genreMap = {
+    romance: 'Romance',
+    fiction: 'Fiction',
+    action: 'Action',
+    scifi: 'Sci-Fi',
+    fantasy: 'Inspirational',
+    children: 'Children',
+  };
+
   return (
-    <Tab.Container className='catagoriesleft' id="left-tabs-example" defaultActiveKey="first">
+    <Tab.Container className='catagoriesleft' id="left-tabs-example" defaultActiveKey="romance" onSelect={onGenreChange}>
       <Row>
         <Col sm={3}>
-          <Nav variant="catagories" className="flex-column">
+          <Nav variant="catagories" className="flex-column" onSelect={(selectedKey) => onGenreChange(genreMap[selectedKey])}>
             <Nav.Item>
-              <Nav.Link className='catitem' eventKey="first"><FontAwesomeIcon icon={faHeart} style={{color: "#41b3a3",}} className='icondiv' />Romance</Nav.Link>
+              <Nav.Link className='catitem' eventKey="romance"><FontAwesomeIcon icon={faHeart} style={{ color: "#41b3a3", }} className='icondiv' />Romance</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link className='catitem' eventKey="second"><FontAwesomeIcon icon={faRobot} style={{color: "#41b3a3",}} className='icondiv'/>Fiction</Nav.Link>
+              <Nav.Link className='catitem' eventKey="fiction"><FontAwesomeIcon icon={faRobot} style={{ color: "#41b3a3", }} className='icondiv' />Fiction</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link className='catitem' eventKey="second"><FontAwesomeIcon icon={faLocationCrosshairs} style={{color: "#41b3a3",}} className='icondiv'/> Action</Nav.Link>
+              <Nav.Link className='catitem' eventKey="action"><FontAwesomeIcon icon={faLocationCrosshairs} style={{ color: "#41b3a3", }} className='icondiv' /> Action</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link className='catitem' eventKey="second"><FontAwesomeIcon icon={faUserAstronaut} style={{color: "#41b3a3",}} className='icondiv'/>Sci-Fi</Nav.Link>
+              <Nav.Link className='catitem' eventKey="inspirational"><FontAwesomeIcon icon={faArrowUpWideShort} style={{color: "#41b3a3",}} className='icondiv'/>Motivational</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link className='catitem' eventKey="second"><FontAwesomeIcon icon={faDragon} style={{color: "#41b3a3",}} className='icondiv'/> Fantasy</Nav.Link>
+              <Nav.Link className='catitem' eventKey="fantasy"><FontAwesomeIcon icon={faDragon} style={{ color: "#41b3a3", }} className='icondiv' /> Fantasy</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link className='catitem' eventKey="second"><FontAwesomeIcon icon={faChildren} style={{color: "#41b3a3",}} className='icondiv'/> Children</Nav.Link>
+              <Nav.Link className='catitem' eventKey="children"><FontAwesomeIcon icon={faChildren} style={{ color: "#41b3a3", }} className='icondiv' /> Children</Nav.Link>
             </Nav.Item>
           </Nav>
         </Col>
