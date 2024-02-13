@@ -1,39 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 import Navbar from './components/Navbar/index'
 import Bookcatagories from './components/Cateogories/catagories'
-
-
-// testing
-
-import SearchBar from './components/Searchform/SearchBar'; 
+import SearchBar from './components/Searchform/SearchBar';
+import { useState } from 'react';
+import CardResults from './components/CardResults/CardResults';
+import axios from 'axios';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [bookData, setBookData] = useState([]);
+
+  const searchBooks = (searchTerm) => {
+    const apiKey = 'AIzaSyDU7wOeXOzxK1owdR26UBuLPhJ2DnezAco';
+    const query = `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(searchTerm)}&key=${apiKey}&maxResults=12`;
+
+    axios.get(query)
+      .then(res => setBookData(res.data.items))
+      .catch(err => console.error("Error fetching data:", err));
+  };
 
   return (
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <>
+      <div>
+      <SearchBar onSearch={searchBooks} />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div>
+        <CardResults books={bookData} />
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p> */}
+      <div>
+        <Bookcatagories />
+      </div>
     </>
-  )
+  );
 }
 
 export default App
