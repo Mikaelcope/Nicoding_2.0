@@ -21,7 +21,7 @@ const SearchCard = ({ book }) => {
 
   return (
     <Card className="h-100">
-      <Row noGutters>
+      <Row g-2>
         <Col md={4}>
           <Card.Img variant="top" src={thumbnail} alt={`Cover of ${title}`} />
         </Col>
