@@ -1,0 +1,65 @@
+
+.card {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+  }
+  
+  .card img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.5rem; 
+  }
+  
+  .more-info {
+    background-color: lightsalmon;
+    color: rgb(0, 0, 0);
+    border: none;
+    margin-right: 1rem;
+    max-width: max-content;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .add-to {
+    background-color: lightgreen;
+    color: black;
+    border: none;
+    max-width: max-content;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .more-info:hover {
+    background-color: rgb(251, 92, 74);
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
+  }
+  .add-to:hover {
+    background-color: rgb(34, 155, 34);
+    color: rgb(255, 255, 255);
+    opacity: 0.8; 
+    transform: scale(1.1);
+  }
+  
