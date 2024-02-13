@@ -1,0 +1,26 @@
+.bookshelfdiv {
+    background-image: url('./Assets/Images/Background.jpg');
+    width: -webkit-fill-available !important;
+    height: fit-content;
+    padding: 30px;
+}
+
+.shelf-1 {
+    width: -webkit-fill-available !important;
+    height: 200px;
+    background-color: #85DCcB;
+}
+
+.shelf-2 {
+    width: -webkit-fill-available !important;
+    height: 200px;
+    background-color: #85DCcB;
+    margin: 30px 0px 0px 0px;
+}
+
+.shelf-3 {
+    width: -webkit-fill-available !important;
+    height: 200px;
+    background-color: #85DCcB;
+    margin: 30px 0px 0px 0px;
+}

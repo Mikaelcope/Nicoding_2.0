@@ -16,7 +16,7 @@ function Landingpage() {
   
     return (
       <div className="App">
-        <Navbar />
+        {/* <Navbar /> */}
         <div className="flex-container">
           <div className="book-categories"><Bookcatagories onGenreChange={handleGenreChange} /></div>
           <div className="disp-columns">

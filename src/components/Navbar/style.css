@@ -3,9 +3,10 @@
     border-bottom: solid 2px lightgrey;
     margin: 0px;
 }
+
 .navdiv {
     display: flex;
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 .nav-pills {
@@ -13,6 +14,11 @@
     margin: 0;
     padding: 0px !important;
     align-items: end;
+}
+
+.container {
+    width: -webkit-fill-available !important;
+    max-width: none;
 }
 
 .pagebutton {
