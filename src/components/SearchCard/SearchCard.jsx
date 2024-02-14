@@ -28,7 +28,7 @@ const SearchCard = ({ book }) => {
         <Col md={8}>
           <Card.Body>
             <Card.Title>{title}</Card.Title>
-            <Card.Text>{authors}</Card.Text>
+            <Card.Text>by {authors}</Card.Text>
             <div className="button-container">
             <Button className='more-info' onClick={handleMoreInfoClick}>More Info</Button>{' '}
             <Button className='add-to' onClick={handleAddToBookshelfClick}>Add to Bookshelf</Button>
