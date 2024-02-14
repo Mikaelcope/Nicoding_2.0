@@ -39,7 +39,6 @@ function Questionnaire() {
 
   return (
     <div>
-      <h2>Questionnaire</h2>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="answer1">How many days did you spend reading this book?</label>
