@@ -31,12 +31,12 @@ const nytBooks = () => {
     <div className='nytcontainer'>
       <h2>NEW YORK TIMES BEST SELLERS</h2>
       <div className='best-container'>
-        {books.map((book) => {
-          const { author, book_image, publisher, description, title } = book
+        {books.map((book, index) => {
+          const { rank, author, book_image, publisher, description, title } = book
          
           return (
             
-            <Card className='bestCard'>
+            <Card className='bestCard' key={index}>
               <div className="card-section">
                 <img src={book_image} className='card-img-fluid'/>
                   <Modal

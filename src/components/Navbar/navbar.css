@@ -33,3 +33,10 @@
         background-color: white !important;
         padding: 0px 0px 0px 30px;
 }
+
+@media (max-width: 576px) { 
+    .navBox {
+      max-width: 72%; 
+      margin-right: 0.5rem auto; 
+    }
+  }

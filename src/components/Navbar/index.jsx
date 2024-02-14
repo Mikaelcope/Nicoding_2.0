@@ -12,7 +12,7 @@ function Navbar() {
       </Nav.Item>
       <div className='navdiv'>
       <Nav.Item>
-        <Nav.Link href="/Landingpage" className='pagebutton' eventKey="link-2">Home</Nav.Link>
+        <Nav.Link href="/Landingpage" className='pagebutton' eventKey="link-3">Home</Nav.Link>
       </Nav.Item>
       <Nav.Item>
         <Nav.Link href="/BookshelfPage" className='pagebutton' eventKey="link-1" >Bookshelf</Nav.Link>
