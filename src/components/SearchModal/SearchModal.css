@@ -10,6 +10,7 @@
     border: none;
     transition: transform 0.2s ease-in-out;
     font-weight: bold;
+    border-radius: 10px;
   }
   
   .search-close-btn {
@@ -18,6 +19,7 @@
     border: none;
     transition: transform 0.2s ease-in-out;
     font-weight: bold;
+    border-radius: 10px;
   }
 
   .search-ebook-btn:hover {
