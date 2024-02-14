@@ -1,31 +1,42 @@
+.h-100.search-card {
+  max-height: min-content;
+  padding: 0.5rem;
+}
 
-.card {
+.search-card {
     cursor: pointer;
     transition: transform 0.2s ease;
+    background-color: var(--purple);
+    padding: 0%;
   }
   
-  .card:hover {
+  .search-card:hover {
     transform: scale(1.03);
   }
   
-  .card img {
+  .search-card img {
     object-fit: cover;
-    width: 100%;
+    width: 95%;
     height: auto;
+    margin: 0.5rem;
   }
   
-  .card-body {
+  .search-card .card-body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
   
-  .card-title {
+  .search-card .card-title {
     font-size: 1.5rem;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2%;
   }
   
-  .card-text {
+  .search-card .card-text {
     font-size: 1rem;
+    font-weight: bold;
   }
 
   .button-container {
@@ -35,7 +46,7 @@
   }
   
   .more-info {
-    background-color: lightsalmon;
+    background-color: var(--light-orange);
     color: rgb(0, 0, 0);
     border: none;
     margin-right: 1rem;
@@ -44,7 +55,7 @@
   }
   
   .add-to {
-    background-color: lightgreen;
+    background-color: var(--light-green);
     color: black;
     border: none;
     max-width: max-content;
@@ -52,12 +63,12 @@
   }
   
   .more-info:hover {
-    background-color: rgb(251, 92, 74);
+    background-color: var(--dark-orange);
     color: rgb(255, 255, 255);
     transform: scale(1.1);
   }
   .add-to:hover {
-    background-color: rgb(34, 155, 34);
+    background-color: var(--dark-green);
     color: rgb(255, 255, 255);
     opacity: 0.8; 
     transform: scale(1.1);

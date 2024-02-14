@@ -4,7 +4,7 @@ import Landingpage from './pages/Landingpage';
 import Navbar from './components/Navbar';
 import BookshelfPage from './pages/BookshelfPage';
 import Readingchallenge from './pages/Readingchallenge';
-
+import './global.css';
 
 function App() {
   return (
