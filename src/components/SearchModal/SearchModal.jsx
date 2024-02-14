@@ -27,13 +27,13 @@ const SearchModal = ({ show, item, onClose }) => {
         {publishedDate && <p><strong>Published:</strong> {publishedDate}</p>}
         {description && <p>{description}</p>}
         {previewLink && 
-          <Button variant="primary" href={previewLink} target="_blank">
+          <Button variant="primary" href={previewLink} target="_blank" className="search-ebook-btn">
             Go to Ebook
           </Button>
         }
       </Modal.Body>
       <Modal.Footer>
-        <Button variant="secondary" onClick={onClose}>Close</Button>
+        <Button variant="secondary" onClick={onClose} className="search-close-btn">Close</Button>
       </Modal.Footer>
     </Modal>
   );
