@@ -1,0 +1,12 @@
+.SwiperHeading ,h3 {
+    background-color: white;
+    color: var(--dark-green);
+    text-align: center;
+}
+
+.SwiperHeading {
+    margin: 2rem;
+}
+
+
+

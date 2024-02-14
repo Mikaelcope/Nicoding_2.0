@@ -3,6 +3,7 @@ import './style.css'
 import Bookcatagories from '../../components/Cateogories/catagories' 
 import BookSwiper from '../../components/Swiper/BookSwiper';
 import CardOutput from '../../components/CardOutput/CardOutput';
+import SwiperHeading from '../../components/SwiperHeading/SwiperHeading';
 
 
 
@@ -22,6 +23,7 @@ function Landingpage() {
           <div className="book-categories"><Bookcatagories onGenreChange={handleGenreChange} /></div>
           <div className="disp-columns">
           <div className="search-display"><CardOutput setSwiper={setSwiper} /></div>
+          <div className="swiper-heading"><SwiperHeading /></div>
           {swiper &&<div className="book-swiper"><BookSwiper genre={genre} /></div>}
           </div>
         </div>
