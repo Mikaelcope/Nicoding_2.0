@@ -59,7 +59,7 @@ function GoalsModal()  {
   };
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      <Button className="hover-button" style={{ backgroundColor: '#E27D60', borderColor: 'white' }} onClick={handleShow}>
         Set your reading goals
       </Button>
 
@@ -122,7 +122,7 @@ function GoalsModal()  {
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="primary" onClick={handleSubmit}>
+          <Button style={{ backgroundColor: '#E27D60', borderColor: 'white' }} className="hover-button" onClick={handleSubmit}>
             Save Changes
           </Button>
         </Modal.Footer>

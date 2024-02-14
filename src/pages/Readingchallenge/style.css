@@ -1,0 +1,19 @@
+.flex-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.row-components{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:20px;
+}
+
+.heading-one{
+    color: #E8A87C;
+    margin-top:40px;
+}
