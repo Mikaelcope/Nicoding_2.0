@@ -1,0 +1,20 @@
+.progress-bar {
+    background-color: #41B3A3 !important;
+}
+
+.custom-progress-bar {
+    background-color: #E8A87C !important;
+
+}
+
+.progress-bar-title-two {
+    font-size: 15px;
+    margin: 10px;
+    color: #7CC3B1  ;
+}
+
+.progress-bar-title{
+    color: #7CC3B1;
+    padding: 0px;
+}
+

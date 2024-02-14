@@ -1,22 +1,27 @@
 import React, {useState} from 'react';
 import './style.css'
-
+import dayjs from 'dayjs'; 
+import RightSlider from '../../components/Offcanvas/index';
+import GoalsModal from '../../components/Modal/modal';
+import UserProgress from '../../components/Progress/index';
 function Readingchallenge() {
-    // const [genre, setGenre] = useState('romance');
-  
-    // const handPageChange = (newGenre) => {
-    //   setPage(BookshelfPage);
-    // };
+  const currentYear = dayjs().format('YYYY');
   
     return (
       <div className="App">
-        <div className="flex-container">
-          <div className="Random"></div>
-          <div className="Random">
-          <div className="Random"></div>
+        
+        <div className="flex-cont">
+          <h1 className="heading-one">{currentYear} READING GOALS</h1>
+          <div className="row-componets">
+          <GoalsModal/>
+          <RightSlider/>
+          </div>
+          <UserProgress/>
+        
+         
           </div>
         </div>
-      </div>
+     
     );
   }
 
