@@ -23,8 +23,7 @@ function Landingpage() {
           <div className="book-categories"><Bookcatagories onGenreChange={handleGenreChange} /></div>
           <div className="disp-columns">
           <div className="search-display"><CardOutput setSwiper={setSwiper} /></div>
-          <div className="swiper-heading"><SwiperHeading /></div>
-          {swiper &&<div className="book-swiper"><BookSwiper genre={genre} /></div>}
+          {swiper &&<div className="book-swiper"><h1>{genre}</h1><BookSwiper genre={genre} /></div>}
           </div>
         </div>
       </div>
