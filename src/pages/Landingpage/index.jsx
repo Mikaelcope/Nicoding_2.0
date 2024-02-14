@@ -7,20 +7,22 @@ import CardOutput from '../../components/CardOutput/CardOutput';
 
 
 function Landingpage() {
-    const [genre, setGenre] = useState('romance');
+    const [genre, setGenre] = useState('');
+    const [swiper, setSwiper] = useState(false);
   
     const handleGenreChange = (newGenre) => {
       setGenre(newGenre);
+      setSwiper(true)
     };
   
     return (
-      <div className="App">
+      <div className="App-">
         {/* <Navbar /> */}
         <div className="flex-container">
           <div className="book-categories"><Bookcatagories onGenreChange={handleGenreChange} /></div>
           <div className="disp-columns">
-          <div className="search-display"><CardOutput /></div>
-          <div className="book-swiper"><BookSwiper genre={genre} /></div>
+          <div className="search-display"><CardOutput setSwiper={setSwiper} /></div>
+          {swiper &&<div className="book-swiper"><BookSwiper genre={genre} /></div>}
           </div>
         </div>
       </div>
