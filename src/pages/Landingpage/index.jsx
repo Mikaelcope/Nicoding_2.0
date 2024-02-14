@@ -3,6 +3,7 @@ import './style.css'
 import Bookcatagories from '../../components/Cateogories/catagories' 
 import BookSwiper from '../../components/Swiper/BookSwiper';
 import CardOutput from '../../components/CardOutput/CardOutput';
+import SwiperHeading from '../../components/SwiperHeading/SwiperHeading';
 
 
 
@@ -21,8 +22,9 @@ function Landingpage() {
         <div className="flex-container">
           <div className="book-categories"><Bookcatagories onGenreChange={handleGenreChange} /></div>
           <div className="disp-columns">
+          <div className='nytimes-section'><NYTimes /></div>
           <div className="search-display"><CardOutput setSwiper={setSwiper} /></div>
-          {swiper &&<div className="book-swiper"><BookSwiper genre={genre} /></div>}
+          {swiper &&<div className="book-swiper"><h1>{genre}</h1><BookSwiper genre={genre} /></div>}
           </div>
         </div>
       </div>
@@ -30,3 +32,4 @@ function Landingpage() {
   }
 
   export default Landingpage;
+  

@@ -12,10 +12,29 @@ A dynamic and immersive Book searching application that creates a user interface
 * [Credits](#credits)
 * [License](#license)
 
+
 ### Installation
 Click on the following link to access the URL:
 
+### Libraries, Packages, APIs
+
+* [Node.Js](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs)
+* [Vite](https://vitejs.dev/guide/)
+* [React-Bootstrap]()
+* [Axios]()
+* [React-Dom]()
+* [React-Router-Dom]()
+* [Bootstrap]()
+* [Swiper]()
+* [FontAwesome]()
+* [React-ChartJs-2]()
+* [DayJs]()
+* [Google Books API]()
+* [New York Times Books API]()
+
+
 ### Usage
+
 
 
 ### Contribution
