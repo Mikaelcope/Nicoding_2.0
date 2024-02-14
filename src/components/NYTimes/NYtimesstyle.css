@@ -7,14 +7,14 @@
   margin-top: 10px;
 }
 
-.card-container {
+.best-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 10px;
 }
 
-div.card {
+.bestCard {
   padding: 0;
   max-width: 150px;
 }

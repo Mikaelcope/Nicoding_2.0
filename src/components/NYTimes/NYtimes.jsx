@@ -30,13 +30,13 @@ const nytBooks = () => {
   return (
     <div className='nytcontainer'>
       <h2>NEW YORK TIMES BEST SELLERS</h2>
-      <div className='card-container'>
+      <div className='best-container'>
         {books.map((book) => {
           const { author, book_image, publisher, description, title } = book
          
           return (
             
-            <Card>
+            <Card className='bestCard'>
               <div className="card-section">
                 <img src={book_image} className='card-img-fluid'/>
                   <Modal

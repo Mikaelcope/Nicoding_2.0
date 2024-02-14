@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import './style.css'
 import dayjs from 'dayjs'; 
 import RightSlider from '../../components/Offcanvas/index';
-import GoalsModal from '../../components/Modal/Modal';
 import UserProgress from '../../components/Progress/index';
 import GoalsModal from '../../components/Modal/index';
 function Readingchallenge() {
