@@ -104,7 +104,7 @@ const BookSwiper = ({ genre }) => {
    
               {books.map((book) => (
               <SwiperSlide key={book.id} className="swiper-slide">
-                  <div style={{ width: '100%', display: 'flex' }}>
+                <div style={{ width: '100%', display: 'flex' }}>
                     <img src={book.imageUrl} alt={book.volumeInfo.title} style={{ width: '100%', display: 'block'}} />
                     <div className="slide-box" style={{ background: 'rgba(0, 0, 0, 0.5)', color: '#fff', display: 'flex', justifyContent: 'space-evenly', alignItems: 'center' }}>
                       <FontAwesomeIcon id="icons" icon={faInfoCircle} onClick={() => toggleAccordion(book.id)} style={{ cursor: 'pointer'}} />
