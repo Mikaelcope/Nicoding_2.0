@@ -7,7 +7,6 @@ import CardOutput from '../../components/CardOutput/CardOutput';
 import NYTimes from '../../components/NYTimes/NYTimes';
 
 
-
 function Landingpage() {
     const [genre, setGenre] = useState('');
     const [activeSection, setActiveSection] = useState('NYT');

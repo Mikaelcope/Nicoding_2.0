@@ -9,7 +9,7 @@ import { faInfoCircle, faBook, faMagnifyingGlass } from '@fortawesome/free-solid
 import './NYtimesstyle.css'
 
 
-const nytBooks = () => {
+const NYTimes = () => {
   const [books, setBooks] = useState([])
 
   const [show, setShow] = useState(false);
@@ -69,6 +69,6 @@ const nytBooks = () => {
   )
 }
 
-export default nytBooks
+export default NYTimes;
 
 
