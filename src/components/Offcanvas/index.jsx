@@ -20,6 +20,9 @@ function RightSlider() {
   const handleCloseModal = () => setShowModal(false);
   const handleShowModal = () => setShowModal(true);
 
+  const booksReadCount = parseInt(localStorage.getItem('booksread')) || 0;
+  const answers = JSON.parse(localStorage.getItem('answers')) || {};
+
   const data = {
     labels: ['Slow', 'Average', 'Fast'],
     datasets: [
