@@ -1,0 +1,18 @@
+.mBody {
+    background-color: #85DCcB;
+    color: white;
+}
+
+.mHeader {
+    background-color: #41B3A3;
+    color: white;
+}
+
+.mFoot {
+    background-color: #41B3A3;
+}
+
+.mclose {
+    background-color: #E27D60;
+    border: none;
+}

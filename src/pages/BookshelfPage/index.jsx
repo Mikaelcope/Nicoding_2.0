@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './bookshelf.css'
+import './bookshelf.css';
 import { Card, Button, Col } from 'react-bootstrap';
 import FinishedMod from '../../components/FinishedModal/finishedMod';
 
@@ -35,25 +35,31 @@ function BookshelfPage() {
       <div className="bookshelfdiv">
         <h1>My Bookshelf</h1>
         <div className='displayLocal'>
-          {dataArray.map((item, index) => (
-            <div className='shelf-1' key={index}>
-              <div className='renderBox'>
-                <Col className='imgdiv'>
-                  <Card.Img className='boxIMG' variant="top" src={item.imageUrl} alt={`Cover of ${item.volumeInfo.title}`} />
-                </Col>
-                <div className='boxInfo'>
-                  <Card.Body className='boxRight'>
-                    <Card.Title className='boxTitle'>{item.volumeInfo.title}</Card.Title>
-                    <Card.Text className='boxTest'>{item.volumeInfo.authors}</Card.Text>
-                    <div className="button-container">
-                      <Button className='boxBTN1' id='boxBTN1' onClick={handleFinishedClick}>Finished!</Button>{' '}
-                      <Button className='boxBTN2' id='boxBTN2' onClick={() => handleDelete(index)}>Remove</Button>
-                    </div>
-                  </Card.Body>
+          {dataArray.length === 0 ? (
+            <div className="empty-message">
+              <p>Your bookshelf is empty. Add books to your bookshelf for them to appear. If you're stuck, go to the home page, click on a category, scroll through to choose a book you like, and click on the bottom right-hand corner book icon.</p>
+            </div>
+          ) : (
+            dataArray.map((item, index) => (
+              <div className='shelf-1' key={index}>
+                <div className='renderBox'>
+                  <Col className='imgdiv'>
+                    <Card.Img className='boxIMG' variant="top" src={item.imageUrl} alt={`Cover of ${item.volumeInfo.title}`} />
+                  </Col>
+                  <div className='boxInfo'>
+                    <Card.Body className='boxRight'>
+                      <Card.Title className='boxTitle'>{item.volumeInfo.title}</Card.Title>
+                      <Card.Text className='boxTest'>{item.volumeInfo.authors}</Card.Text>
+                      <div className="button-container">
+                        <Button className='boxBTN1' id='boxBTN1' onClick={handleFinishedClick}>Finished!</Button>{' '}
+                        <Button className='boxBTN2' id='boxBTN2' onClick={() => handleDelete(index)}>Remove</Button>
+                      </div>
+                    </Card.Body>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))
+          )}
         </div>
       </div>
       {showModal && (
