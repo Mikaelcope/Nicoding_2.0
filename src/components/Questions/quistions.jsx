@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './questions.css'
 
 function Questionnaire() {
   const [answers, setAnswers] = useState({
@@ -60,7 +61,7 @@ function Questionnaire() {
             onChange={handleInputChange} 
           />
         </div>
-        <button type="submit">Submit</button>
+        <button className='msubmit' type="submit">Submit</button>
       </form>
     </div>
   );

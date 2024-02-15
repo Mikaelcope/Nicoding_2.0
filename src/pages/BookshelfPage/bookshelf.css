@@ -71,3 +71,16 @@
     background-color: rgb(9, 75, 114);
     box-shadow: 2px 2px 2px white inset;
 }
+
+
+@media (max-width: 768px) { 
+    .shelf-1 {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 320px) {
+    .shelf-1 {
+      max-width: 100%;
+    }
+  }

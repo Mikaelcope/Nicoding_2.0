@@ -20,6 +20,9 @@ function RightSlider() {
   const handleCloseModal = () => setShowModal(false);
   const handleShowModal = () => setShowModal(true);
 
+  const booksReadCount = parseInt(localStorage.getItem('booksread')) || 0;
+  const answers = JSON.parse(localStorage.getItem('answers')) || {};
+
   const data = {
     labels: ['Slow', 'Average', 'Fast'],
     datasets: [
@@ -59,7 +62,7 @@ function RightSlider() {
         display: true,
         position: 'top',
         labels: {
-          color: 'white' // Add this line to change the legend text color
+          color: 'white' 
         }
       },
     },
@@ -96,7 +99,7 @@ function RightSlider() {
         </Offcanvas.Body>
       </Offcanvas>
       <Modal show={showModal} onHide={handleCloseModal}>
-        <Modal.Header closeButton style={{ fontSize: '24px', fontWeight: 'bold', backgroundColor: '#85CDCA ' }}>Dragon Reader Unlocked</Modal.Header >
+        <Modal.Header closeButton style={{ fontSize: '24px', fontWeight: 'bold'}}>Dragon Reader Unlocked</Modal.Header >
           <ModalBody style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}} className="modal">
             <img src={dragonImage} alt="Dragon" style={{ width: '40%'}}/>
             <p>You are within the top 10% of readers in the UK !</p>

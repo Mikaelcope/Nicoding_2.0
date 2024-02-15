@@ -1,4 +1,3 @@
-
 import './modal.css'
 import React, { useState, useEffect } from 'react';
 import Modal from 'react-bootstrap/Modal';
@@ -35,9 +34,9 @@ function GoalsModal()  {
 
   useEffect(() => {
     const savedDataString = localStorage.getItem('readingGoals');
-    const goal = savedDataString ? JSON.parse(savedDataString) : null;
+    const goal = savedDataString ? JSON.parse(savedDataString) : {};
 
-    setDaysPerWeek(goal.daysPerWeek || 0);
+    setDaysPerWeek(goal.daysPerWeek || '0');
     setReadingHours(goal.hoursPerDay || 0);
     setBooksPerYear(goal.booksPerYear || 0);
   }, []);

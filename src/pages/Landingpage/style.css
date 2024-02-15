@@ -16,10 +16,15 @@
   justify-content: center; 
   align-items: center;
   display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: 600px) {
   .flex-container {
     flex-direction: column;
   }
+}
+
+.book-categories {
+  background-color: beige;
 }
