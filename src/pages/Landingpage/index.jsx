@@ -5,6 +5,7 @@ import BookSwiper from '../../components/Swiper/BookSwiper';
 import CardOutput from '../../components/CardOutput/CardOutput';
 // import SwiperHeading from '../../components/SwiperHeading/SwiperHeading';
 import NewYork from '../../components/Newyork/newyork';
+import BookFooter from '../../components/Footer/footer';
 
 
 function Landingpage() {
@@ -26,6 +27,7 @@ function Landingpage() {
             {activeSection === 'NYT' && <div className='nytimes-section'><NewYork /></div>}
           </div>
         </div>
+          <div className="footer-section"><BookFooter /></div>
       </div>
     );
   }

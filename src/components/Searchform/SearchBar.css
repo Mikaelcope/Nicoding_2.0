@@ -1,0 +1,23 @@
+.searchBarContainer {
+    background-image: url('../../assets/bookbackground.png'); /* Update the path if necessary */
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    padding: 6.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .searchBarHeading {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .searchbtn {
+    background-color: var(--dark-green);
+    border: none;
+  }
+
+  .searchbtn:hover {
+    background-color: var(--light-green);
+  }

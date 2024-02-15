@@ -1,11 +1,10 @@
 .flex-container {
   display: flex;
   height: 100%; 
-  
 }
 
 .book-categories {
-  flex: 0 0 auto; 
+  flex: 0 0; 
 }
 
 .disp-columns{
@@ -27,5 +26,6 @@
 }
 
 .book-categories {
-  background-color: beige;
+  background-color: var(--cream);
+  padding: 0;
 }

@@ -1,0 +1,6 @@
+.bookfooter {
+    align-items: center;
+    text-align: center;
+    color: var(--dark-orange);
+    margin-top: 2rem;
+}

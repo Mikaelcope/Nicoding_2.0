@@ -1,16 +1,27 @@
 .nav {
     font-size: xx-large;
-    padding: 20px;
+    padding: 0px;
     font-weight: 400;
+    background-color: var(--cream);
 }
 
 .catitem {
     display: flex;
-    color:#E27D60;
+    color:var(--dark-orange);
+    background-color: var(--cream);
     align-items: center;
     margin-right: 5px;
 }
 
+.nav-link.catitem:hover {
+    color: var(--dark-green);
+  }
+
 .icondiv {
     width: 70px;
 }
+
+.icondiv:hover {
+    transform: scale(1.2);
+}
+

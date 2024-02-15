@@ -5,7 +5,6 @@ import './SearchModal.css';
 const SearchModal = ({ show, item, onClose }) => {
   if (!show) return null;
 
-  // Destructure necessary info from item
   const { volumeInfo } = item;
   const thumbnail = volumeInfo.imageLinks?.smallThumbnail;
   const title = volumeInfo.title;

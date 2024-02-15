@@ -1,6 +1,5 @@
 .container {
     width: auto;
-    border-bottom: solid 2px lightgrey;
     margin: 0px;
 }
 
@@ -24,18 +23,19 @@
 .pagebutton {
     margin: 10px;
     padding: 10px;
-    color: #85CDCA;
+    color: var(--light-green);
     font-weight: 600;
     
 }
-
 .navLogo {
-        background-color: white !important;
-        padding: 0px 0px 0px 30px;
+  padding-left: 3.5rem;
+}
+.navbox {
+    background-color:var(--cream);
 }
 
-.navbox {
-    background-color: beige;
+.nav-link:hover {
+  color: var(--dark-orange);
 }
 
 @media (max-width: 576px) { 
