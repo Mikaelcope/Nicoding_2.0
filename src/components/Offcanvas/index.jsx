@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './style.css'
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button, ModalBody, Offcanvas } from 'react-bootstrap';
 import { Pie } from 'react-chartjs-2';
 import Chart from 'chart.js/auto';
@@ -16,19 +16,53 @@ function RightSlider() {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-
   const handleCloseModal = () => setShowModal(false);
   const handleShowModal = () => setShowModal(true);
 
-  const booksReadCount = parseInt(localStorage.getItem('booksread')) || 0;
-  const answers = JSON.parse(localStorage.getItem('answers')) || {};
+  const [pieData, setPieData] = useState([0, 0, 0]); 
+  const [minutesRead, setMinutesRead] = useState(0);
+  const [pages, setPages] = useState(0);
+
+  useEffect(() => {
+    const answers = JSON.parse(localStorage.getItem('answers')) || {};
+    // Split the string of inputs for days and hours into an Number array.
+    const daysArray = answers.days ? answers.days.split(',').map(Number) : [];
+    const hoursArray = answers.hours ? answers.hours.split(',').map(Number) : [];
+    let paceCounts = { Slow: 0, Average: 0, Fast: 0 };
+
+    let totalMins = 0;
+    // Calculate reading pace
+    daysArray.forEach((days, index) => {
+      const hours = hoursArray[index] || 0; 
+      const hoursPerBook = days * hours;
+      totalMins += hoursArray[index];
+      if (hoursPerBook <= 10) {
+        paceCounts.Fast += 1;
+      } else if (hoursPerBook > 10 && hoursPerBook <= 20) {
+        paceCounts.Average += 1;
+      } else {
+        paceCounts.Slow += 1;
+      }
+    });
+    // Calculate and set total number of minutes read
+    const minutes = totalMins * 60;
+    setMinutesRead(minutes);
+    setPieData([paceCounts.Slow, paceCounts.Average, paceCounts.Fast]);
+
+    // Accumlate page count of all books read
+    const Reads = JSON.parse(localStorage.getItem('Read') || '[]');
+    const totalPages = Reads.reduce((acc, book) => acc + (book.volumeInfo.pageCount || 0), 0);
+    setPages(totalPages)
+  }, []);
+
+  
 
   const data = {
     labels: ['Slow', 'Average', 'Fast'],
     datasets: [
       {
         label: 'Books',
-        data: [12, 19, 3],
+        data: pieData,
         backgroundColor: [
           'rgba(255, 99, 132, 0.6)',
           'rgba(54, 162, 235, 0.6)',
@@ -83,7 +117,7 @@ function RightSlider() {
          <Pie data={data} options={options}/> 
          </div>
          <div className="text">
-         <Offcanvas.Title ><FontAwesomeIcon icon={faClock} /> 13.6 Million Minutes Read So Far</Offcanvas.Title>
+         <Offcanvas.Title ><FontAwesomeIcon icon={faClock} /> {minutesRead} Minutes Read So Far</Offcanvas.Title>
          </div>
          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin: '20px'}}>
          <Button style={{ backgroundColor: '#E8A87C ', borderColor: '#E8A87C' }} className="hover-button" onClick={() => {
@@ -94,7 +128,7 @@ function RightSlider() {
           </Button>
           </div>
          <p className="text">
-          Congratulations! You've read 1000 pages this year... Keep up the good work!<br /><br />
+          Congratulations! You've read {pages} pages this year... Keep up the good work!<br /><br />
           </p>
         </Offcanvas.Body>
       </Offcanvas>

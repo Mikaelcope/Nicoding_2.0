@@ -20,10 +20,11 @@ function Bookcatagories({ onGenreChange }) {
     scifi: 'Sci-Fi',
     fantasy: 'Inspirational',
     children: 'Children',
+    science: 'Science'
   };
 
   return (
-    <Tab.Container className='catagoriesleft' id="left-tabs-example" defaultActiveKey="romance" onSelect={onGenreChange}>
+    <Tab.Container className='catagoriesleft' id="left-tabs-example" defaultActiveKey="Romance" onSelect={onGenreChange}>
       <Row>
       <div>
         <h5>Select an Icon to play Book Tinder!</h5>
@@ -31,22 +32,25 @@ function Bookcatagories({ onGenreChange }) {
         <Col sm={3}>
           <Nav variant="catagories" className="flex-column" onSelect={(selectedKey) => onGenreChange(genreMap[selectedKey])}>
             <Nav.Item>
-              <Nav.Link className='catitem' eventKey="romance"><FontAwesomeIcon icon={faHeart} style={{ color: "#41b3a3", }} className='icondiv' />Romance</Nav.Link>
+              <Nav.Link className='catitem' eventKey="Romance"><FontAwesomeIcon icon={faHeart} style={{ color: "#41b3a3"}} className='icondiv' />Romance</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link className='catitem' eventKey="fiction"><FontAwesomeIcon icon={faRobot} style={{ color: "#41b3a3", }} className='icondiv' />Fiction</Nav.Link>
+              <Nav.Link className='catitem' eventKey="Fiction"><FontAwesomeIcon icon={faRobot} style={{ color: "#41b3a3"}} className='icondiv' />Fiction</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link className='catitem' eventKey="action"><FontAwesomeIcon icon={faLocationCrosshairs} style={{ color: "#41b3a3", }} className='icondiv' /> Action</Nav.Link>
+              <Nav.Link className='catitem' eventKey="Action"><FontAwesomeIcon icon={faLocationCrosshairs} style={{ color: "#41b3a3"}} className='icondiv' /> Action</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link className='catitem' eventKey="inspirational"><FontAwesomeIcon icon={faArrowUpWideShort} style={{color: "#41b3a3",}} className='icondiv'/>Motivational</Nav.Link>
+              <Nav.Link className='catitem' eventKey="Inspirational"><FontAwesomeIcon icon={faArrowUpWideShort} style={{color: "#41b3a3"}} className='icondiv'/>Motivational</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link className='catitem' eventKey="fantasy"><FontAwesomeIcon icon={faDragon} style={{ color: "#41b3a3", }} className='icondiv' /> Fantasy</Nav.Link>
+              <Nav.Link className='catitem' eventKey="Fantasy"><FontAwesomeIcon icon={faDragon} style={{ color: "#41b3a3"}} className='icondiv' /> Fantasy</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link className='catitem' eventKey="children"><FontAwesomeIcon icon={faChildren} style={{ color: "#41b3a3", }} className='icondiv' /> Children</Nav.Link>
+              <Nav.Link className='catitem' eventKey="Children"><FontAwesomeIcon icon={faChildren} style={{ color: "#41b3a3"}} className='icondiv' /> Children</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link className='catitem' eventKey="Science"><FontAwesomeIcon icon={faChildren} style={{ color: "#41b3a3"}} className='icondiv' /> Science</Nav.Link>
             </Nav.Item>
           </Nav>
         </Col>
