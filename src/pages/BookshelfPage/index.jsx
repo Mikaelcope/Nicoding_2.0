@@ -1,11 +1,12 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './bookshelf.css'
-import { Card, Button, Row, Col } from 'react-bootstrap';
+import { Card, Button, Col } from 'react-bootstrap';
 import FinishedMod from '../../components/FinishedModal/finishedMod';
 
-function BookshelfPage(storedData) {
+function BookshelfPage() {
   const [dataArray, setDataArray] = useState([]);
-
+  const [showModal, setShowModal] = useState(false);
+  const [selectedItemIndex, setSelectedItemIndex] = useState(null);
 
   useEffect(() => {
     const fetchData = () => {
@@ -13,15 +14,20 @@ function BookshelfPage(storedData) {
       if (storedData) {
         setDataArray(JSON.parse(storedData));
       }
-      // console.log(storedData)
     };
 
     fetchData();
   }, []);
 
-  const [showModal, setShowModal] = useState(false);
   const handleFinishedClick = () => {
     setShowModal(true); 
+  };
+
+  const handleDelete = (index) => {
+    const updatedDataArray = [...dataArray];
+    updatedDataArray.splice(index, 1);
+    setDataArray(updatedDataArray);
+    localStorage.setItem('savedBooks', JSON.stringify(updatedDataArray));
   };
 
   return (
@@ -41,7 +47,7 @@ function BookshelfPage(storedData) {
                     <Card.Text className='boxTest'>{item.volumeInfo.authors}</Card.Text>
                     <div className="button-container">
                       <Button className='boxBTN1' id='boxBTN1' onClick={handleFinishedClick}>Finished!</Button>{' '}
-                      <Button className='boxBTN2' id='boxBTN2' >Remove</Button>
+                      <Button className='boxBTN2' id='boxBTN2' onClick={() => handleDelete(index)}>Remove</Button>
                     </div>
                   </Card.Body>
                 </div>
@@ -57,9 +63,8 @@ function BookshelfPage(storedData) {
           onClose={() => setShowModal(false)}
         />
       )}
-      </div>
+    </div>
   );
 }
 
 export default BookshelfPage;
-

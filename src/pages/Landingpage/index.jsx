@@ -4,7 +4,7 @@ import Bookcatagories from '../../components/Cateogories/catagories'
 import BookSwiper from '../../components/Swiper/BookSwiper';
 import CardOutput from '../../components/CardOutput/CardOutput';
 // import SwiperHeading from '../../components/SwiperHeading/SwiperHeading';
-import NYTimes from '../../components/NYTimes/NYTimes';
+import NewYork from '../../components/Newyork/newyork';
 
 
 function Landingpage() {
@@ -23,7 +23,7 @@ function Landingpage() {
           <div className="disp-columns">
           <div className="search-display"><CardOutput activeSection={activeSection} setActiveSection={setActiveSection} /></div>
             {activeSection === 'swiper' && <div className="book-swiper"><h1>{genre}</h1><BookSwiper genre={genre} /></div>}
-            {activeSection === 'NYT' && <div className='nytimes-section'><NYTimes /></div>}
+            {activeSection === 'NYT' && <div className='nytimes-section'><NewYork /></div>}
           </div>
         </div>
       </div>
