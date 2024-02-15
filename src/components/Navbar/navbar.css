@@ -34,6 +34,10 @@
         padding: 0px 0px 0px 30px;
 }
 
+.navbox {
+    background-color: beige;
+}
+
 @media (max-width: 576px) { 
     .navBox {
       max-width: 72%; 

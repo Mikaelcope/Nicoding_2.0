@@ -25,3 +25,7 @@
     flex-direction: column;
   }
 }
+
+.book-categories {
+  background-color: beige;
+}
