@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './questions.css'
 
 function Questionnaire() {
+
   const [answers, setAnswers] = useState({
     answer1: '',
     answer2: ''
@@ -14,7 +15,7 @@ function Questionnaire() {
       [name]: value
     }));
   };
-
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     
@@ -24,6 +25,7 @@ function Questionnaire() {
       ...existingAnswers,
       days: existingAnswers.days ? existingAnswers.days + ', ' + answers.answer1 : answers.answer1,
       hours: existingAnswers.hours ? existingAnswers.hours + ', ' + answers.answer2 : answers.answer2
+     
     };
 
     localStorage.setItem('answers', JSON.stringify(updatedAnswers));
@@ -31,13 +33,13 @@ function Questionnaire() {
     
     setAnswers({
       answer1: '',
-      answer2: ''
+      answer2: '' 
     });
     
     const booksReadCount = parseInt(localStorage.getItem('booksread')) || 0;
     localStorage.setItem('booksread', booksReadCount + 1);
   };
-
+  
   return (
     <div>
       <form onSubmit={handleSubmit}>
@@ -61,7 +63,7 @@ function Questionnaire() {
             onChange={handleInputChange} 
           />
         </div>
-        <button className='msubmit' type="submit">Submit</button>
+        <button type="submit">Submit</button>
       </form>
     </div>
   );

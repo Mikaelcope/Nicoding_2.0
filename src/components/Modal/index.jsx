@@ -4,6 +4,7 @@ import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
+import { useReadingGoals } from '../Context/context'
 
 
 const displayGoals = () => {
@@ -50,11 +51,21 @@ function GoalsModal()  {
     localStorage.setItem('readingGoals', JSON.stringify(readingGoals));
   }
 
+  const { saveGoals } = useReadingGoals();
   const handleSubmit = (event) => {
     event.preventDefault();
     saveReadingHabits();
     displayGoals();
     setShow(false);
+
+    const newGoals = {
+        daysPerWeek: daysPerWeek,
+        hoursPerDay: readingHours,
+        booksPerYear: booksPerYear,
+      };
+      saveGoals(newGoals); // Save using context method
+      setShow(false);
+   
   };
   return (
     <>

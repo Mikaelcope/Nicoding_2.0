@@ -20,14 +20,29 @@ function BookshelfPage() {
   }, []);
 
   const handleFinishedClick = () => {
-    setShowModal(true); 
+    setShowModal(true);
   };
 
+  // Remove book from local storage when Remove button is clicked
   const handleDelete = (index) => {
     const updatedDataArray = [...dataArray];
     updatedDataArray.splice(index, 1);
     setDataArray(updatedDataArray);
     localStorage.setItem('savedBooks', JSON.stringify(updatedDataArray));
+  };
+
+  // Removes the book from savedBooks and adds to the Read array in local storage
+  const handleRead = (index) => {
+    const bookToDelete = dataArray[index];
+    const updatedDataArray = [...dataArray];
+
+    updatedDataArray.splice(index, 1);
+    setDataArray(updatedDataArray);
+    localStorage.setItem('savedBooks', JSON.stringify(updatedDataArray));
+    const currentReads = JSON.parse(localStorage.getItem('Read') || '[]');
+    currentReads.push(bookToDelete);
+    localStorage.setItem('Read', JSON.stringify(currentReads));
+    handleFinishedClick();
   };
 
   return (
@@ -51,7 +66,7 @@ function BookshelfPage() {
                       <Card.Title className='boxTitle'>{item.volumeInfo.title}</Card.Title>
                       <Card.Text className='boxTest'>{item.volumeInfo.authors}</Card.Text>
                       <div className="button-container">
-                        <Button className='boxBTN1' id='boxBTN1' onClick={handleFinishedClick}>Finished!</Button>{' '}
+                        <Button className='boxBTN1' id='boxBTN1' onClick={() => handleRead(index)}>Finished!</Button>{' '}
                         <Button className='boxBTN2' id='boxBTN2' onClick={() => handleDelete(index)}>Remove</Button>
                       </div>
                     </Card.Body>
