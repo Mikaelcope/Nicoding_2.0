@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import { Card, Row } from 'react-bootstrap';
-import { IoInformationCircleSharp } from "react-icons/io5";
+// import { IoInformationCircleSharp } from "react-icons/io5";
 import './NYtimesstyle.css'
 
 
@@ -40,7 +40,7 @@ const NewYork = () => {
               
                 <div className="button-container">
                 
-                  <a className="nytURL" href={url}><IoInformationCircleSharp />More Information</a>
+                  <a className="nytURL" href={url}>More Information</a>
                   </div>
                          
             </Card>
