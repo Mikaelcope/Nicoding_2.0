@@ -59,7 +59,7 @@ function BookshelfPage() {
       {showModal && (
         <FinishedMod
           show={showModal}
-          item={storedData}
+          item={dataArray}
           onClose={() => setShowModal(false)}
         />
       )}
