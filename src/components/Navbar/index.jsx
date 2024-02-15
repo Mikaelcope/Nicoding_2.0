@@ -8,7 +8,7 @@ function Navbar() {
     <div className='container navbox'>
     <Nav variant="pills" defaultActiveKey="/home">
       <Nav.Item>
-        <Nav.Link href="/Landingpage" className='navLogo'><img src={Logo} alt="logo" style={{ width: '120px', height: '120px' }}/></Nav.Link>
+        <Nav.Link href="/Landingpage" className='navLogo'><img src={Logo} alt="logo" style={{ width: '150px', height: '120px'}}/></Nav.Link>
       </Nav.Item>
       <div className='navdiv'>
       <Nav.Item>

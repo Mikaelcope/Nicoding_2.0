@@ -4,7 +4,7 @@
     background-position: center;
     height: auto;
     padding: 6.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
   }
   
   .searchBarHeading {
@@ -13,3 +13,11 @@
     text-align: center;
   }
   
+  .searchbtn {
+    background-color: var(--dark-green);
+    border: none;
+  }
+
+  .searchbtn:hover {
+    background-color: var(--light-green);
+  }

@@ -26,7 +26,7 @@ function SearchBar({ onSearch }) {
             onChange={(e) => setSearch(e.target.value)}
             placeholder="Search by Title or Author"
           />
-          <Button variant="primary" type="submit">
+          <Button variant="primary" type="submit" className='searchbtn'>
             <FontAwesomeIcon icon={faSearch} />
           </Button>
         </InputGroup>
