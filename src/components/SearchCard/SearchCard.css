@@ -46,6 +46,10 @@
     gap: 0.5rem; 
   }
   
+  .button-container .add-to.added-to-bookshelf {
+    background-color: var(--dark-orange) !important;
+  }
+
   .more-info {
     background-color: var(--dark-green);
     color: white;
