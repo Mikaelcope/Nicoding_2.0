@@ -4,7 +4,7 @@ import Bookcatagories from '../../components/Cateogories/catagories'
 import BookSwiper from '../../components/Swiper/BookSwiper';
 import CardOutput from '../../components/CardOutput/CardOutput';
 import SwiperHeading from '../../components/SwiperHeading/SwiperHeading';
-
+import BookFooter from '../../components/Footer/footer';
 
 
 function Landingpage() {
@@ -27,6 +27,7 @@ function Landingpage() {
           {swiper &&<div className="book-swiper"><BookSwiper genre={genre} /></div>}
           </div>
         </div>
+          <div className="footer-section"><BookFooter /></div>
       </div>
     );
   }

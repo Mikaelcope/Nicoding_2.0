@@ -6,7 +6,7 @@
 
 .catitem {
     display: flex;
-    color:#E27D60;
+    color:var(--dark-orange);
     align-items: center;
     margin-right: 5px;
 }

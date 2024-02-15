@@ -24,7 +24,7 @@
 .pagebutton {
     margin: 10px;
     padding: 10px;
-    color: #85CDCA;
+    color: var(--light-green);
     font-weight: 600;
     
 }
