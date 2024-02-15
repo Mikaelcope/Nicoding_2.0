@@ -25,3 +25,9 @@
     transform: scale(1.2);
 }
 
+h5 {
+    color: var(--dark-green);
+    text-align: center;
+    margin: 1.5rem;
+   
+    }
