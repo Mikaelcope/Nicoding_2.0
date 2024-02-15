@@ -1,78 +1,56 @@
 .nytcontainer h2 {
   margin: auto 0;
   padding: none;
-  color: none;
-  align-items: center;
+  color: var(--dark-orange);
+  text-align: center;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .best-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
-.bestCard {
+.nytCard {
   padding: 0;
-  max-width: 150px;
+  background-color: var(--blue);
 }
 
-img.card {
-  width: 250px;
+.nytCard:hover {
+  transform: scale(1.03);
+  font-size: 15px;
+  background-color: var(--og-cream);
+  color: var(--blue);
+}
+
+a:hover {
+  color: var(--blue);
+}
+
+.book-image {
+  width: 200px;
+  height: 300px;
   overflow: hidden;
 }
 
-button.info-btn {
-  flex-direction: row;
+.button-container a {
+  display: flex;
   justify-content: space-between;
-  background: none;
-  background-color: rgb(0, 0, 0, 0.0);
-  border: none;
-  color: #41B3A3;
-  font-size:  25px;
+  align-items: center;
+  padding: 5px;
 }
 
-button.info-btn:hover {
-  flex-direction: row;
-  justify-content: space-between;
-  background: none;
-  background-color: rgb(0, 0, 0, 0.0);
-  border: none;
-  color: #7CC3B1;
-  font-size:  28px;
+.nytURL {
+  color: var(--og-cream);
+  text-align: center;
+  font-weight: bold;
 }
 
-button.bookshelf-btn {
-  flex-direction: row;
-  justify-content: space-between;
-  background: none;
-  background-color: rgb(0, 0, 0, 0.0);
-  border: none;
-  color:  #E27D60;
-  font-size:  25px;
+.nytURL:hover {
+  color: var(--blue);
+  text-align: center;
+  font-weight: bold;
 }
-
-button.shelf-btn:hover {
-  flex-direction: row;
-  justify-content: space-between;
-  background: none;
-  background-color: rgb(0, 0, 0, 0.0);
-  border: none;
-  color: #E8A87C;
-  font-size:  28px;
-}
-
-/*
-@media (max-width: 767px) {
-  div.nyt-container {
-      max-width: 240px;
-      margin-top: 20px;
-  }
-  div.info-container {
-      height: 320px;
-      border-radius: 18px;
-  }
-  
-} */
