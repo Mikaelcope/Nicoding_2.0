@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import { Card, Row } from 'react-bootstrap';
-// import { IoInformationCircleSharp } from "react-icons/io5";
 import './NYtimesstyle.css'
 
 
@@ -27,7 +26,7 @@ const NewYork = () => {
       <h2>NEW YORK TIMES BEST SELLERS</h2>
       <div className='best-container'>
         {books.map((book, index) => {
-          const { url, book_image, publisher, description, title } = book
+          const { amazon_product_url , book_image} = book
           
           return (
 
@@ -40,7 +39,7 @@ const NewYork = () => {
               
                 <div className="button-container">
                 
-                  <a className="nytURL" href={url}>More Information</a>
+                  <a className="nytURL" href={amazon_product_url}>More Information</a>
                   </div>
                          
             </Card>
