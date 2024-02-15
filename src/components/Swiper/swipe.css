@@ -1,3 +1,14 @@
+h1{
+  color: var(--dark-orange);
+}
+
+h3 {
+  color: var(--dark-green);
+  text-align: center;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
 .swiper {
   width: 240px;
   height: 320px;

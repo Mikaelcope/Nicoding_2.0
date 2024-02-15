@@ -74,7 +74,14 @@ const BookSwiper = ({ genre }) => {
     
       return (
         <>
+
+          <div className="swiper-header">
+            <h3>JUDGE A BOOK BY ITS COVER <br/>Swipe left & right to find your next read</h3>
+           </div>
+
           <div className="content-wrapper" >
+          
+
             {/* <Swiper
               effect={'cards'}
               grabCursor={true}

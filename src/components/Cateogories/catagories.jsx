@@ -25,6 +25,9 @@ function Bookcatagories({ onGenreChange }) {
   return (
     <Tab.Container className='catagoriesleft' id="left-tabs-example" defaultActiveKey="romance" onSelect={onGenreChange}>
       <Row>
+      <div>
+        <h5>Select an Icon to play Book Tinder!</h5>
+        </div>
         <Col sm={3}>
           <Nav variant="catagories" className="flex-column" onSelect={(selectedKey) => onGenreChange(genreMap[selectedKey])}>
             <Nav.Item>
@@ -48,6 +51,7 @@ function Bookcatagories({ onGenreChange }) {
           </Nav>
         </Col>
         <Col sm={9}>
+        
           {/* <Tab.Content>
             <Tab.Pane eventKey="first">First tab content</Tab.Pane>
             <Tab.Pane eventKey="second">Second tab content</Tab.Pane>
