@@ -41,7 +41,7 @@ const SearchCard = ({ book }) => {
             <Card.Text>by {authors}</Card.Text>
             <div className="button-container">
               <Button className='more-info' onClick={handleMoreInfoClick}>More Info</Button>{' '}
-              <Button className='add-to' onClick={handleAddToBookshelfClick} disabled={addedToBookshelf}>
+              <Button className={`add-to ${addedToBookshelf ? 'added-to-bookshelf' : ''}`} onClick={handleAddToBookshelfClick} disabled={addedToBookshelf}>
                 {addedToBookshelf ? 'Added to Bookshelf' : 'Add to Bookshelf'}
               </Button>
             </div>
