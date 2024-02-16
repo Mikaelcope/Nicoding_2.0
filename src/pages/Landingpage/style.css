@@ -22,8 +22,9 @@
 }
 
 @media (max-width: 600px) {
-  .flex-container {
+  .flex-container, .disp-columns {
     flex-direction: column;
+    margin-left: 0px;
   }
 }
 
