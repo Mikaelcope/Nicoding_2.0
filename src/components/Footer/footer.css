@@ -10,3 +10,10 @@
 .bookfooter h5{
     color: #787775;
 }
+
+@media (max-width: 767px) {
+    .bookfooter h5{
+        width: 70vw;
+    }
+     
+}
