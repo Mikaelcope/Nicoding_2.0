@@ -6,15 +6,13 @@ A dynamic and immersive Book searching application that creates a user interface
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
-* [Contribution](#contribution)
 * [Tests](#tests)
-* [Questions](#questions)
+* [Links](#tests)
 * [Credits](#credits)
 * [License](#license)
 
-
 ### Installation
-Click on the following link to access the URL:
+Click on the following link to access the URL: https://jocular-empanada-a9fae2.netlify.app/
 
 ### Libraries, Packages, APIs
 
@@ -37,19 +35,33 @@ Click on the following link to access the URL:
 
 
 
-### Contribution
+
 
 
 ### Tests
 
+We manually tested this app, ensuring that: 
+* search results were correct for search bar 
+* results were correct for when categories were selected
+* books were being added to and removed from the bookshelf
+* reading goals functionality was working correctly
+* modals were working correctly across the website
+* mobile responsivess was working correctly
 
-### Questions
-Have any questions or want to get in touch. Email me on sample@gmail.com
 
-To find more of my work, click on the link:
-githubuser1234
+### Links
+Nicoding 2.0 Presentation: [Presentation](https://docs.google.com/presentation/d/1i6IL4zutpDUDC3nJ_EFuF2kTjc06cBKPwA7TEvVxb8w/edit#slide=id.p1)
+
+Netlify Depolyment: [Nicoding](https://jocular-empanada-a9fae2.netlify.app/)
 
 ### Credits
+* Jess [Github Profile](https://github.com/jessi994)
+* Sarah [Github Profile](https://github.com/shemlock)
+* Kyle [Github Profile](https://github.com/KyloGG88)
+* Mikael [Github Profile](https://github.com/Mikaelcope)
+
+* We'd also like to thank TA's Nirav and Tikto for their help and guidance with this project. 
+
 EdX front end web developement course. <br>
 React Boostrap. <br>
 Font Awesome. <br>
