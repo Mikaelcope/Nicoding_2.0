@@ -67,8 +67,14 @@ a:hover {
 
 
 @media (max-width: 767px) {
-  div.nyt-container, .nytcontainer h2, div.info-container {
-    display: none;
+  .nytcontainer h2, .cards-NYTT, .best-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+  .book-image {
+    margin-left: 0px;
+
   }
    
 }
