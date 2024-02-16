@@ -1,7 +1,7 @@
 # Bookshelf [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-  
-## Discription
-A dynamic and immersive Book searching application that creates a user interface that is simple yet inviting to users. Using the application is easy yet provides users with all the necessary features to save and add books they have read, would like to read and are reading to a digital bookshelf. Set reading goals and track them using the app.
+![landing-page](/public/landing-page.png)
+## Description
+A dynamic and immersive Book searching application that creates a user interface that is simple yet inviting to users. Using the application is easy yet provides users with all the necessary features to save and add books they have read, would like to read and are reading to a digital bookshelf. They can also set reading goals and track them using the app.
 
 ## Table of Contents
 * [Installation](#installation)
