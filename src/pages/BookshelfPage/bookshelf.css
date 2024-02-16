@@ -109,6 +109,11 @@
       .shelf-1 {
           max-width: 100%;
       }
+     .bookshelfdiv {
+        margin: 0;
+        padding: 0px;
+        padding-top: 20px;
+    }
   }
 
   @media (max-width: 320px) {
