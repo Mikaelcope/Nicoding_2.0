@@ -44,8 +44,7 @@ a:hover {
 
 .button-container a {
   display: flex;
-.button-container a {
-  display: flex;
+
   justify-content: space-between;
   align-items: center;
   padding: 5px;
@@ -57,10 +56,7 @@ a:hover {
   color: var(--og-cream);
   text-align: center;
   font-weight: bold;
-.nytURL {
-  color: var(--og-cream);
-  text-align: center;
-  font-weight: bold;
+
 }
 
 .nytURL:hover {

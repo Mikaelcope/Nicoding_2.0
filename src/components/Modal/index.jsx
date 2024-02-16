@@ -132,7 +132,7 @@ function GoalsModal() {
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button style={{ backgroundColor: '#E27D60', borderColor: 'white' }} className="hover-button" onClick={handleSubmit}>
+          <Button style={{ backgroundColor: 'rgb(202, 169, 118)', borderColor: 'white' }} className="hover-button" onClick={handleSubmit}>
             Save Changes
           </Button>
         </Modal.Footer>
