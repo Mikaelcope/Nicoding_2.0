@@ -25,6 +25,7 @@
   .flex-container, .disp-columns {
     flex-direction: column;
     margin-left: 0px;
+    padding: 0px;
   }
 }
 
