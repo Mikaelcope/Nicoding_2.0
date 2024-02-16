@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import { Card, Row } from 'react-bootstrap';
+import { Card, Row } from 'react-bootstrap';
 import './NYtimesstyle.css'
 
 
