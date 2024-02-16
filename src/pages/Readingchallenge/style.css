@@ -1,23 +1,71 @@
 .flex-cont{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background-image: url('../../assets/bookshelf-lights.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    /* Ensure it covers the full viewport height */
+    width: 100%;
+
 }
 
-.row-components{
+.App-reading-challenge{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin:20px;
+    
+    
+     
+    
+   
 }
 
 .heading-one{
     color: #E8A87C;
     margin-top:40px;
+    text-align:center;
 }
 
 .landingPageHeader{
     margin-left: 15px;
 }
+
+.row-componets{
+    width:100%;
+    margin-left: 450px;
+    padding: 20px;
+   
+}
+
+@media (max-width: 768px) {
+    .row-componets {
+      margin-left: 200px; 
+    }
+  }
+  
+  
+  @media (max-width: 600px) {
+    .row-componets {
+      margin-left: 100px; 
+      width: 75vw;
+    }
+    .heading-one{
+        font-size: 3em;
+        margin-left:5px;
+    }
+    .displayLocal{
+        margin-left: 2px;
+    }
+  }
+  
+  
+  @media (max-width: 575px) {
+    .row-componets {
+      margin-left: 100px; 
+      width: 50vw;
+
+    }
+    .displayLocal{
+        margin-left: 2px;
+    }
+  }

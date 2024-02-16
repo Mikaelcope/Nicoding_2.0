@@ -48,10 +48,10 @@ function BookshelfPage() {
   return (
     <div className="App">
       <div className="bookshelfdiv">
-        <h1>My Bookshelf</h1>
+        <h1 className = "heading-book-shelf">My Bookcase</h1>
         <div className='displayLocal'>
           {dataArray.length === 0 ? (
-            <div className="empty-message">
+            <div className="empty-message" style ={{backgroundColor: 'rgba(0, 0, 0, 0.783)', marginLeft:'10px', color: 'white'}}>
               <p>Your bookshelf is empty. Add books to your bookshelf for them to appear. If you're stuck, go to the home page, click on a category, scroll through to choose a book you like, and click on the bottom right-hand corner book icon.</p>
             </div>
           ) : (
@@ -63,8 +63,8 @@ function BookshelfPage() {
                   </Col>
                   <div className='boxInfo'>
                     <Card.Body className='boxRight'>
-                      <Card.Title className='boxTitle'>{item.volumeInfo.title}</Card.Title>
-                      <Card.Text className='boxTest'>{item.volumeInfo.authors}</Card.Text>
+                      <Card.Title className='boxTitle'>{item.volumeInfo.title} </Card.Title>
+                      <Card.Text className='boxTest' style={{textAlign: 'center'}}>By: {item.volumeInfo.authors}</Card.Text>
                       <div className="button-container">
                         <Button className='boxBTN1' id='boxBTN1' onClick={() => handleRead(index)}>Finished!</Button>{' '}
                         <Button className='boxBTN2' id='boxBTN2' onClick={() => handleDelete(index)}>Remove</Button>

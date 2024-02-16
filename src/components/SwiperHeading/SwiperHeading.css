@@ -2,10 +2,16 @@
     background-color: white;
     color: var(--dark-green);
     text-align: center;
+    
+}
+
+.SwiperHeading{
+    font: var(--fonts) !important;
 }
 
 .SwiperHeading {
     margin: 0;
+   
 }
 
 

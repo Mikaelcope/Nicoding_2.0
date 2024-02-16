@@ -1,6 +1,6 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import './style.css'
-import dayjs from 'dayjs'; 
+import dayjs from 'dayjs';
 import RightSlider from '../../components/Offcanvas/index';
 import UserProgress from '../../components/Progress/index';
 import GoalsModal from '../../components/Modal/index';
@@ -9,13 +9,13 @@ import { ReadingGoalsProvider } from '../../components/Context/context';
 
 function Readingchallenge() {
   const currentYear = dayjs().format('YYYY');
-  const [readArray, setReadArray] = useState([]); 
+  const [readArray, setReadArray] = useState([]);
 
   useEffect(() => {
     const fetchData = () => {
       const storedReadData = localStorage.getItem('Read');
       if (storedReadData) {
-        setReadArray(JSON.parse(storedReadData)); 
+        setReadArray(JSON.parse(storedReadData));
       }
     };
 
@@ -23,26 +23,31 @@ function Readingchallenge() {
   }, []);
 
   return (
-    <div className="App">
-      {/* <div className="flex-cont"> */}
-        <h1 className="heading-one">{currentYear} READING GOALS</h1>
-        {/* <div className="row-componets"> */}
-        <RightSlider/>
-        <ReadingGoalsProvider>
-          <GoalsModal/>
-          
-        {/* </div> */}
-        <UserProgress/>
-        </ReadingGoalsProvider>
-      {/* </div> */}
-      <div style={{display:'flex', justifyContent: 'flex-start', alignItems: 'center', margin: '10px'}} ><h1 className="landingPageHeader">Your Reads</h1></div>
-      <div className='displayLocal'>
-        {readArray.length === 0 ? ( 
+    <div className="App-reading-challenge">
+      <div className="flex-cont">
+      <div style={{backgroundColor: 'rgba(0, 0, 0, 0.683)', height: '100%'}}>
+      <h1 className="heading-one">{currentYear} READING GOALS</h1>
+      <div className="row-componets">
+      <RightSlider />
+      <ReadingGoalsProvider>
+        <GoalsModal />
+       
+
+
+        <UserProgress />
+      </ReadingGoalsProvider>
+      </div>
+      </div>
+      </div>
+
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin: '10px' }} ><h1 className="landingPageHeader">Your Reads</h1></div>
+      <div className='displayLocal'  style={{ marginLeft: '60px' }}>
+        {readArray.length === 0 ? (
           <div className="empty-message">
             <p>No books read so far...</p>
           </div>
         ) : (
-          readArray.map((item, index) => ( 
+          readArray.map((item, index) => (
             <div className='shelf-1' key={index}>
               <div className='renderBox'>
                 <Col className='imgdiv'>
@@ -63,4 +68,4 @@ function Readingchallenge() {
   );
 }
 
-  export default Readingchallenge;
+export default Readingchallenge;

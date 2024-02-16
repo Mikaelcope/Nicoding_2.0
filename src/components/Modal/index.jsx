@@ -21,7 +21,7 @@ const displayGoals = () => {
 };
 
 
-function GoalsModal()  {
+function GoalsModal() {
 
   // To open and close modal
   const [show, setShow] = useState(false);
@@ -59,25 +59,25 @@ function GoalsModal()  {
     setShow(false);
 
     const newGoals = {
-        daysPerWeek: daysPerWeek,
-        hoursPerDay: readingHours,
-        booksPerYear: booksPerYear,
-      };
-      saveGoals(newGoals); // Save using context method
-      setShow(false);
-   
+      daysPerWeek: daysPerWeek,
+      hoursPerDay: readingHours,
+      booksPerYear: booksPerYear,
+    };
+    saveGoals(newGoals); // Save using context method
+    setShow(false);
+
   };
   return (
     <>
-      <Button className="hover-button" style={{ backgroundColor: '#E27D60', borderColor: 'white' }} onClick={handleShow}>
+      <Button className="hover-button" style={{ backgroundColor: '#cca98d', borderColor: '#cca98d' }} onClick={handleShow}>
         Set your reading goals
       </Button>
 
       <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>Reading Goals</Modal.Title>
+        <Modal.Header closeButton className="modal-styling">
+          <Modal.Title style ={{fontSize: '2rem'}}>Reading Goals</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body className="modal-styling">
           <Form>
             <Form.Group
               className="mb-3"
@@ -128,7 +128,7 @@ function GoalsModal()  {
 
           </Form>
         </Modal.Body>
-        <Modal.Footer>
+        <Modal.Footer className="modal-styling">
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>

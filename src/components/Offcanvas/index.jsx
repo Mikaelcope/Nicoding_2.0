@@ -7,7 +7,7 @@ import Chart from 'chart.js/auto';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock } from '@fortawesome/free-solid-svg-icons';
 import Modal from 'react-bootstrap/Modal';
-import dragonImage from '../../assets/dragonunlocked.jpg';
+import dragonImage from '../../assets/dragom_480.png';
 
 
 function RightSlider() {
@@ -90,13 +90,13 @@ function RightSlider() {
           top: 0,
           bottom: 10
         },
-        color: 'black' 
+        color: '#787775' 
       },
       legend: {
         display: true,
         position: 'top',
         labels: {
-          color: 'white' 
+          color: '#787775'
         }
       },
     },
@@ -104,13 +104,13 @@ function RightSlider() {
   };
   return (
     <>
-      <Button  style={{ backgroundColor: '#7CC3B1', borderColor: 'white', margin: '20px'}} className="hover-button" onClick={handleShow}> 
+      <Button  style={{ backgroundColor: '#caa976', borderColor: '#caa976', margin: '20px'}} className="hover-button" onClick={handleShow}> 
         Reading Tracker
       </Button>
 
-      <Offcanvas show={show} onHide={handleClose} placement="end" style={{ backgroundColor: '#85CDCA '}}>
+      <Offcanvas show={show} onHide={handleClose} placement="end" style={{ backgroundColor: 'var(--cream)'}}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title style={{ margin: '10px', color: 'black'}}>Track Your Reading Habits</Offcanvas.Title>
+          <Offcanvas.Title style={{ margin: '10px', color: '#787775'}}>Track Your Reading Habits</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body style={{ padding:'0px'}}>
          <div style={{ width: '75%', heigth:'70%'}} className="pie">
@@ -120,7 +120,7 @@ function RightSlider() {
          <Offcanvas.Title ><FontAwesomeIcon icon={faClock} /> {minutesRead} Minutes Read So Far</Offcanvas.Title>
          </div>
          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin: '20px'}}>
-         <Button style={{ backgroundColor: '#E8A87C ', borderColor: '#E8A87C' }} className="hover-button" onClick={() => {
+         <Button style={{ backgroundColor: 'rgb(202, 169, 118) ', borderColor: 'rgb(202, 169, 118)' }} className="hover-button" onClick={() => {
             handleCloseModal();
             handleShowModal();
           }}>
@@ -133,12 +133,12 @@ function RightSlider() {
         </Offcanvas.Body>
       </Offcanvas>
       <Modal show={showModal} onHide={handleCloseModal}>
-        <Modal.Header closeButton style={{ fontSize: '24px', fontWeight: 'bold'}}>Dragon Reader Unlocked</Modal.Header >
-          <ModalBody style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}} className="modal">
+        <Modal.Header closeButton style={{ fontSize: '24px', fontWeight: 'bold', backgroundColor:'var(--cream)'}}>Dragon Reader Unlocked</Modal.Header >
+          <ModalBody style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor:'var(--cream)', color:'#787775'}} className="modal">
             <img src={dragonImage} alt="Dragon" style={{ width: '40%'}}/>
             <p>You are within the top 10% of readers in the UK !</p>
             </ModalBody>
-        <Modal.Footer>
+        <Modal.Footer style={{backgroundColor:'var(--cream)'}}>
           <Button variant="secondary" onClick={handleCloseModal}>
             Close
           </Button>

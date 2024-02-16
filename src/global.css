@@ -1,13 +1,23 @@
 :root {
-    --light-orange: #E8A87C;
-    --dark-orange: #E27D60;
+    --light-orange: #9b938e;
+    --dark-orange: #d4996f;
     --light-green: #7CC3B1;
     --dark-green: #41B3A3;
     --purple: #e6bde6;
     --og-purple: #C38D9E;
     --blue: #85CDCA;
-    --cream: #fdfbf0;
+    --cream: #f7e7ce;
     --og-cream: #fdfbf0;
+    --fonts: "Times New Roman", Times, serif;
+   
   }
+
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--cream);
+    color: #787775;
+  }
+
+ 
 
 

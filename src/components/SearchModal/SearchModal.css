@@ -6,11 +6,11 @@
 }
 
 .modal, title {
-  color: var(--dark-orange);
+  color: #787775;
 }
 .modal-body {
   background-color: var(--light-green);
-  color: white;
+  color: #787775;
 }
 
 .modal-body img {
@@ -38,7 +38,7 @@
   }
 
   .search-ebook-btn:hover {
-    background-color: var(--dark-green);
+    background-color: #95C8D8;
     color: rgb(255, 255, 255);
     transform: scale(1.1);
   }

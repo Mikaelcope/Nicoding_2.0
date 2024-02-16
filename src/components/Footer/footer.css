@@ -1,6 +1,12 @@
 .bookfooter {
     align-items: center;
     text-align: center;
-    color: var(--dark-orange);
     margin-top: 2rem;
+    background-color: var(--cream);
+    padding: 5px;
+
+}
+
+.bookfooter h5{
+    color: #787775;
 }

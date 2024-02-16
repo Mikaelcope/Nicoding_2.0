@@ -20,9 +20,14 @@ function Landingpage() {
     return (
       <div className="App-">
         <div className="flex-container">
-          <div className="book-categories"><Bookcatagories onGenreChange={handleGenreChange} /></div>
+        <div className="search-display"><CardOutput activeSection={activeSection} setActiveSection={setActiveSection} /></div>
+         
           <div className="disp-columns">
-          <div className="search-display"><CardOutput activeSection={activeSection} setActiveSection={setActiveSection} /></div>
+          {activeSection !== 'searchSection' && (
+          <div className="book-categories">
+            <Bookcatagories onGenreChange={handleGenreChange} />
+          </div>
+         )}
             {activeSection === 'swiper' && <div className="book-swiper"><h1>{genre}</h1><BookSwiper genre={genre} /></div>}
             {activeSection === 'NYT' && <div className='nytimes-section'><NewYork /></div>}
           </div>

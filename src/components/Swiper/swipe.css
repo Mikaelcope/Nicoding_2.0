@@ -3,10 +3,11 @@ h1{
 }
 
 h3 {
-  color: var(--dark-green);
+  color: #787775;
   text-align: center;
   margin-left: 3rem;
   margin-right: 3rem;
+  font-weight: bold;
 }
 
 .swiper {
@@ -52,7 +53,7 @@ h3 {
 
 .accordion-content {
   width: 100%;
-  background: '#C38D9E';
+  background: '#ead7c6' !important;
   color: '#fff';
   overflow: 'auto';
   margin-top: 20px;

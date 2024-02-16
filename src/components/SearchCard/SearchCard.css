@@ -6,7 +6,7 @@
 .search-card {
     cursor: pointer;
     transition: transform 0.2s ease;
-    background-color: var(--cream);
+    background-color: #ffddba;
     padding: 0%;
     margin-top: 1rem;
   }
@@ -43,7 +43,9 @@
   .button-container {
     display: flex;
     justify-content: flex-start;
+    bottom: 0px;
     gap: 0.5rem; 
+    margin-bottom: 5px;
   }
   
   .button-container .add-to.added-to-bookshelf {
@@ -51,7 +53,7 @@
   }
 
   .more-info {
-    background-color: var(--dark-green);
+    background-color: #95C8D8;
     color: white;
     border: none;
     margin-right: 1rem;
@@ -60,7 +62,7 @@
   }
   
   .add-to {
-    background-color: var(--dark-green);
+    background-color: #95C8D8;
     color: white;
     border: none;
     max-width: max-content;
@@ -78,4 +80,10 @@
     opacity: 0.8; 
     transform: scale(1.1);
   }
+
+  
+  /* .btn-primary {
+    background-color:#95C8D8 !important;
+  } */
+
   

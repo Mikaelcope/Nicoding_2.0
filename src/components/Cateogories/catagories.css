@@ -7,15 +7,24 @@
 
 .catitem {
     display: flex;
-    color:var(--dark-orange);
+    color: #787775;
     background-color: var(--cream);
     align-items: center;
     margin-right: 5px;
+    font-family: var(--fonts);
+}
+
+.catagoriesleft {
+    height: 100vh;
 }
 
 .nav-link.catitem:hover {
-    color: var(--dark-green);
-  }
+    color: #95C8D8;
+}
+
+.nav-link.active {
+    color: #95C8D8; 
+}
 
 .icondiv {
     width: 70px;
@@ -26,8 +35,9 @@
 }
 
 h5 {
-    color: var(--dark-green);
+    
     text-align: center;
     margin: 1.5rem;
-   
-    }
+    font-weight: bold;
+
+}

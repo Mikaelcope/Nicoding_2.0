@@ -1,23 +1,27 @@
 .searchBarContainer {
-    background-image: url('../../assets/bookbackground.png'); /* Update the path if necessary */
-    background-size: cover;
-    background-position: center;
-    height: auto;
-    padding: 6.5rem;
-    margin-bottom: 3rem;
-  }
-  
-  .searchBarHeading {
-    color: white;
-    font-weight: bold;
-    text-align: center;
-  }
+  background-image: url('../../assets/newheader_720.jpg');
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  padding: 6.5rem;
+  margin-bottom: 3rem;
+}
+
+.heading-book-shelf{
+  padding: 0px;
+}
+.searchBarHeading {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.683);
+}
   
   .searchbtn {
-    background-color: var(--dark-green);
+    background-color: #95C8D8;
     border: none;
   }
 
   .searchbtn:hover {
-    background-color: var(--light-green);
+    background-color: #95C8D8 !important;
   }

@@ -16,10 +16,10 @@ const SearchModal = ({ show, item, onClose }) => {
 
   return (
     <Modal show={show} onHide={onClose} centered>
-      <Modal.Header closeButton>
+      <Modal.Header closeButton style={{backgroundColor: "#cca98d"}}>
         <Modal.Title>{title}</Modal.Title>
       </Modal.Header>
-      <Modal.Body>
+      <Modal.Body style={{backgroundColor: "#cca98d"}}>
         <img src={thumbnail} alt={title} className="img-fluid" />
         {authors && <p><strong>Author:</strong> {authors}</p>}
         {publisher && <p><strong>Publisher:</strong> {publisher}</p>}
@@ -31,7 +31,7 @@ const SearchModal = ({ show, item, onClose }) => {
           </Button>
         }
       </Modal.Body>
-      <Modal.Footer>
+      <Modal.Footer style={{backgroundColor: "#cca98d"}}>
         <Button variant="secondary" onClick={onClose} className="search-close-btn">Close</Button>
       </Modal.Footer>
     </Modal>

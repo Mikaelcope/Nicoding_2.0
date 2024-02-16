@@ -37,8 +37,8 @@ const SearchCard = ({ book }) => {
         </Col>
         <Col md={8}>
           <Card.Body>
-            <Card.Title>{title}</Card.Title>
-            <Card.Text>by {authors}</Card.Text>
+            <Card.Title style={{color: '#787775'}}>{title}</Card.Title>
+            <Card.Text style={{color: '#787775'}}>by: {authors}</Card.Text>
             <div className="button-container">
               <Button className='more-info' onClick={handleMoreInfoClick}>More Info</Button>{' '}
               <Button className={`add-to ${addedToBookshelf ? 'added-to-bookshelf' : ''}`} onClick={handleAddToBookshelfClick} disabled={addedToBookshelf}>

@@ -57,16 +57,16 @@ const BookSwiper = ({ genre }) => {
         setOpenAccordionId(null); 
       };
       
-      // Function to add a book to local storage  {/* onClick={() => toggleAccordion(book.id)} */
+      // Function to add a book to local storage
       const addToLocalStorage = (book, event) => {
         event.stopPropagation();
         const existingBooks = JSON.parse(localStorage.getItem('savedBooks') || '[]');
         if (!existingBooks.some(savedBook => savedBook.id === book.id)) {
           existingBooks.push(book);
           localStorage.setItem('savedBooks', JSON.stringify(existingBooks));
-          alert('Book added to your collection!');
+
         } else {
-          alert('This book is already in your collection.');
+          alert('This book is already in your Bookcase.');
         }
       };
     
@@ -82,14 +82,7 @@ const BookSwiper = ({ genre }) => {
           <div className="content-wrapper" >
           
 
-            {/* <Swiper
-              effect={'cards'}
-              grabCursor={true}
-              modules={[EffectCards]}
-              className="mySwiper"
-              onSlideChange={handleSlideChange}
-    
-            > */}
+          
              <Swiper
                 effect={'coverflow'}
                 grabCursor={true}
@@ -123,7 +116,7 @@ const BookSwiper = ({ genre }) => {
             </Swiper>
     
             {selectedBook && (
-              <div className="accordion-content" style={{ background: '#C38D9E', color: '#fff', overflow: "auto", margin: "auto" }}>
+              <div className="accordion-content" style={{ background: '#c4b3a9', color: '#fff', overflow: "auto", margin: "auto" }}>
                 <p><strong>Title:</strong> {selectedBook.volumeInfo.title}</p>
                 <p><strong>Page Count:</strong> {selectedBook.volumeInfo.pageCount}</p>
                 <p><strong>Average Rating:</strong> {selectedBook.volumeInfo.averageRating || 'Not rated'}</p>

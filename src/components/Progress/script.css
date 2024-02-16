@@ -1,20 +1,33 @@
 .progress-bar {
-    background-color: #41B3A3 !important;
+    background-color: rgb(204, 169, 141) !important;
+    
 }
 
 .custom-progress-bar {
-    background-color: #E8A87C !important;
+    background-color: rgb(149, 200, 216) !important;
+    
 
 }
 
 .progress-bar-title-two {
-    font-size: 15px;
+    font-size: 20px;
     margin: 10px;
-    color: #7CC3B1  ;
+    color: rgb(204, 169, 141) !important;
 }
 
 .progress-bar-title{
-    color: #7CC3B1;
+    color: rgb(202, 169, 118) !important;
     padding: 0px;
+    margin: 10px;
 }
+/* //display: none; */
+@media (max-width: 768px) {
+    .custom-progress-bar {
+      
+      width: 100px;
+    }
+    .progress-bar-title-two, .span-num{
+        display: none;
+    }
+  }
 

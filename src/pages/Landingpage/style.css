@@ -1,6 +1,7 @@
 .flex-container {
   display: flex;
   height: 100%; 
+  flex-direction: column;
 }
 
 .book-categories {
@@ -8,8 +9,9 @@
 }
 
 .disp-columns{
-  flex-direction: column;
-  width: -webkit-fill-available;
+  display: flex;
+  flex-direction: row;
+  /* width: -webkit-fill-available; */
 }
 .book-swiper {
   flex: 3;
