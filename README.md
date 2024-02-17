@@ -51,7 +51,7 @@ Click on the following link to access the URL: https://jocular-empanada-a9fae2.n
 
  ![book-tinder ](/public/book-tinder.png)
 
-* If your not sure what book or author you're looking for you can also find new books by playing "Book Tinder".
+* If you're not sure what book or author you're looking for you can also find new books by playing "Book Tinder".
 * To start, click on an icon for the category of your choice.
 * Then swipe left and right to toggle through book cards.
 * Clicking the i icon will being up a modal with more information.
@@ -64,7 +64,7 @@ Click on the following link to access the URL: https://jocular-empanada-a9fae2.n
 * Clicking on the bookcase tab in the nav bar will bring you to your bookcase , where you can view all your added books.
 * You can remove books by clicking the remove button 
 * Clicking the "finished" button will bring up the modal below, where you can input information about how long it took you to read the book.
-* Clicking on "finsihed" will also add the book to the "your reads" of the reading goal section and update your reading stats for the progress bars and reading tracker. 
+* Clicking on "finished" will also add the book to the "your reads" of the reading goal section and update your reading stats for the progress bars and reading tracker. 
 
  ![bookshelf-modal](/public/bookcase-modal.png)
  
