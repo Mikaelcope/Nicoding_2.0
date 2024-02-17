@@ -100,7 +100,7 @@ We manually tested this app, ensuring that:
 ### Links
 Nicoding 2.0 Presentation: [Presentation](https://docs.google.com/presentation/d/1i6IL4zutpDUDC3nJ_EFuF2kTjc06cBKPwA7TEvVxb8w/edit#slide=id.p1)
 
-Netlify Depolyment: [Nicoding](https://jocular-empanada-a9fae2.netlify.app/)
+Netlify Deployment: [Nicoding](https://jocular-empanada-a9fae2.netlify.app/)
 
 ### Credits
 * Jess [Github Profile](https://github.com/jessi994)
