@@ -1,5 +1,7 @@
 # Bookshelf [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ![landing-page](/public/landing-page.png)
+
 ## Description
 A dynamic and immersive Book searching application that creates a user interface that is simple yet inviting to users. Using the application is easy yet provides users with all the necessary features to save and add books they have read, would like to read and are reading to a digital bookshelf. They can also set reading goals and track them using the app.
 
@@ -32,6 +34,34 @@ Click on the following link to access the URL: https://jocular-empanada-a9fae2.n
 
 
 ### Usage
+
+# SEARCH 
+* As seen in the image below, you can search for books by title or by author, by using the search bar.
+* When you search, cards will be returned with book information on them.
+* Click the "add to bookshelf button" to add books to you bookshelf 
+![search](/public/search.png)
+
+* When you click the "More Info" button a model will appear with further book information.
+ ![search-modal](/public/search-modal.png)
+
+# BOOK TINDER
+ ![book-tinder ](/public/book-tinder.png)
+* If your not sure what book or author you're looking for you can also find new books by playing "Book Tinder".
+* To start, click on an icon for the category of your choice.
+* Then swipe left and right to toggle through book cards.
+* Clicking the i icon will being up a modal with more information.
+* Clicking the book icon will add the book to your bookshelf. 
+
+# BOOKSHELF 
+ ![bookshelf](/public/bookshelf.png)
+
+* Clicking on the bookcase tab in the nav bar will bring you to your bookcase , where you can view all your added books.
+* You can remove books by clicking the remove button 
+* Clicking the "finished" button will bring up the modal below, where you can input information about how long it took you to read the book. 
+
+ ![bookshelf-modal](/public/bookcase-modal.png)
+ 
+# READING GOALS
 
 
 
