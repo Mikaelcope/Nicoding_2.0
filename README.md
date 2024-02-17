@@ -39,22 +39,26 @@ Click on the following link to access the URL: https://jocular-empanada-a9fae2.n
 
 * As seen in the image below, you can search for books by title or by author, by using the search bar.
 * When you search, cards will be returned with book information on them.
-* Click the "add to bookshelf button" to add books to you bookshelf 
+* Click the "add to bookshelf button" to add books to you bookshelf
+  
 ![search](/public/search.png)
 
 * When you click the "More Info" button a model will appear with further book information.
+  
  ![search-modal](/public/search-modal.png)
 
 # BOOK TINDER
 
  ![book-tinder ](/public/book-tinder.png)
+
 * If your not sure what book or author you're looking for you can also find new books by playing "Book Tinder".
 * To start, click on an icon for the category of your choice.
 * Then swipe left and right to toggle through book cards.
 * Clicking the i icon will being up a modal with more information.
 * Clicking the book icon will add the book to your bookshelf. 
 
-# BOOKSHELF 
+# BOOKCASE
+
  ![bookshelf](/public/bookshelf.png)
 
 * Clicking on the bookcase tab in the nav bar will bring you to your bookcase , where you can view all your added books.
