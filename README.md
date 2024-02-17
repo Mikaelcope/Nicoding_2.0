@@ -36,6 +36,7 @@ Click on the following link to access the URL: https://jocular-empanada-a9fae2.n
 ### Usage
 
 # SEARCH 
+
 * As seen in the image below, you can search for books by title or by author, by using the search bar.
 * When you search, cards will be returned with book information on them.
 * Click the "add to bookshelf button" to add books to you bookshelf 
@@ -45,6 +46,7 @@ Click on the following link to access the URL: https://jocular-empanada-a9fae2.n
  ![search-modal](/public/search-modal.png)
 
 # BOOK TINDER
+
  ![book-tinder ](/public/book-tinder.png)
 * If your not sure what book or author you're looking for you can also find new books by playing "Book Tinder".
 * To start, click on an icon for the category of your choice.
@@ -57,17 +59,29 @@ Click on the following link to access the URL: https://jocular-empanada-a9fae2.n
 
 * Clicking on the bookcase tab in the nav bar will bring you to your bookcase , where you can view all your added books.
 * You can remove books by clicking the remove button 
-* Clicking the "finished" button will bring up the modal below, where you can input information about how long it took you to read the book. 
+* Clicking the "finished" button will bring up the modal below, where you can input information about how long it took you to read the book.
+* Clicking on "finsihed" will also add the book to the "your reads" of the reading goal section and update your reading stats for the progress bars and reading tracker. 
 
  ![bookshelf-modal](/public/bookcase-modal.png)
  
 # READING GOALS
 
+ ![reading-goals](/public/reading-goals.png)
 
+ * Clicking on the reading goals tab in the nav bar will bring you to your reading goals.
+ * The progress bars show your progress regarding your monthly and yearly reading goals.
+ * The "Your Reads" section shows all the books you've finished. 
+ * You can set or change your reading goals by clicking on the "Set your reading goals" button, which will being up the modal in the image below.
 
+ ![reading-goals-modal](/public/reading-goals-modal.png)
 
+ * Clicking on the reading tracker button will bring your reading tracker, as seen in the image below.
+ * Here you can see your reading stats including a pie chart of your reading pace, the total minutes you've spent reading, and how many pages you've read this year.
+ * You can click on the "Reading Milestone Unlocked" button to see your reading milestones and rewards.
+ * For example, the milestone of being in the top 10% of readers unlocks the reward of "Dragon Reader".
 
-
+ ![reading-tracker](/public/reading-tracker.png)
+ 
 ### Tests
 
 We manually tested this app, ensuring that: 
