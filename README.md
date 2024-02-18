@@ -87,7 +87,7 @@ Click on the following link to access the URL: https://jocular-empanada-a9fae2.n
  ![reading-tracker](/public/reading-tracker.png)
 
  # Mobile view
-  ![mobile-landing-page](/public/mobile response 1.png)  ![mobile-bookcase](/public/mobile response 2.png) ![mobile-reading-goals](/public/mobile response 3.png)
+  ![mobile-landing-page](/public/mobile%20response%201.png)  ![mobile-bookcase](/public/mobile%20response%202.png) ![mobile-reading-goals](/public/mobile%20response%203.png)
  
 ### Tests
 
