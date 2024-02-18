@@ -85,6 +85,9 @@ Click on the following link to access the URL: https://jocular-empanada-a9fae2.n
  * For example, the milestone of being in the top 10% of readers unlocks the reward of "Dragon Reader".
 
  ![reading-tracker](/public/reading-tracker.png)
+
+ # Mobile view
+  ![mobile-landing-page](/public/mobile response 1.png)  ![mobile-bookcase](/public/mobile response 2.png) ![mobile-reading-goals](/public/mobile response 3.png)
  
 ### Tests
 
